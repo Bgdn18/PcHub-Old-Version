@@ -46,7 +46,6 @@ namespace PCHUB
         {
             this.BackColor = Color.White;
             label1.ForeColor = Color.Black;
-            label2.ForeColor = Color.Black;
             label3.ForeColor = Color.Black;
         }
         //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
@@ -56,17 +55,10 @@ namespace PCHUB
         {
             this.BackColor = Color.BlueViolet;
             label1.ForeColor = Color.White;
-            label2.ForeColor = Color.White;
             label3.ForeColor = Color.White;
         }
         //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
 
-        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
-        private void qToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
 
         //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -162,5 +154,19 @@ namespace PCHUB
             browser.Show(); // Открываем Form2 как независимую форму
             this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
+
+
+        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
+        private void Taskkiller_Click(object sender, EventArgs e)
+        {
+            TaskKiller killer = new TaskKiller(); // Создаем новый экземпляр Form2
+            killer.Show(); // Открываем Form2 как независимую форму
+        }
+
     }
 }

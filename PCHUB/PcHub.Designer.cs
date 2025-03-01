@@ -49,6 +49,7 @@
             TxtWriter = new Button();
             Google = new Button();
             Browse = new Button();
+            Taskkiller = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -223,9 +224,9 @@
             build.ForeColor = Color.White;
             build.Location = new Point(0, 415);
             build.Name = "build";
-            build.Size = new Size(75, 20);
+            build.Size = new Size(81, 20);
             build.TabIndex = 9;
-            build.Text = "BUILD: 1.1";
+            build.Text = "BUILD: 1.11";
             // 
             // TxtWriter
             // 
@@ -236,7 +237,7 @@
             TxtWriter.Name = "TxtWriter";
             TxtWriter.Size = new Size(128, 50);
             TxtWriter.TabIndex = 10;
-            TxtWriter.Text = "TXT-Writer";
+            TxtWriter.Text = ".TXT Writer";
             TxtWriter.UseVisualStyleBackColor = true;
             TxtWriter.Click += TxtWriter_Click;
             // 
@@ -266,12 +267,26 @@
             Browse.UseVisualStyleBackColor = true;
             Browse.Click += Browse_Click;
             // 
+            // Taskkiller
+            // 
+            Taskkiller.Cursor = Cursors.Hand;
+            Taskkiller.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Taskkiller.Location = new Point(147, 156);
+            Taskkiller.Margin = new Padding(4, 3, 4, 3);
+            Taskkiller.Name = "Taskkiller";
+            Taskkiller.Size = new Size(127, 53);
+            Taskkiller.TabIndex = 18;
+            Taskkiller.Text = "Taskkiller";
+            Taskkiller.UseVisualStyleBackColor = true;
+            Taskkiller.Click += Taskkiller_Click;
+            // 
             // PcHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RebeccaPurple;
             ClientSize = new Size(800, 450);
+            Controls.Add(Taskkiller);
             Controls.Add(Browse);
             Controls.Add(Google);
             Controls.Add(TxtWriter);
@@ -319,5 +334,6 @@
         private Button Google;
         private ToolStripMenuItem toHubToolStripMenuItem;
         private Button Browse;
+        private Button Taskkiller;
     }
 }

@@ -73,7 +73,7 @@ namespace PCHUB
         }
 
         //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
-        private void whiteToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
         }

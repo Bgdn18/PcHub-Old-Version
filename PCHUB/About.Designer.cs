@@ -45,7 +45,7 @@
             ABOUTTEXT.Name = "ABOUTTEXT";
             ABOUTTEXT.Size = new Size(306, 69);
             ABOUTTEXT.TabIndex = 0;
-            ABOUTTEXT.Text = "Сделано \"Богдан Хорольский\" \r\nНамерено на личное использование.\r\nо а еще 1812 посхалка лол";
+            ABOUTTEXT.Text = "Сделано \"Bogodan\" \r\nНамерено на личное использование.\r\nо а еще 1812 посхалка лол";
             // 
             // PCHUB
             // 
@@ -64,11 +64,11 @@
             build.BackColor = Color.Gray;
             build.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             build.ForeColor = Color.White;
-            build.Location = new Point(512, 182);
+            build.Location = new Point(506, 182);
             build.Name = "build";
-            build.Size = new Size(64, 20);
+            build.Size = new Size(70, 20);
             build.TabIndex = 2;
-            build.Text = "build 1.1";
+            build.Text = "build 1.11";
             // 
             // label1
             // 

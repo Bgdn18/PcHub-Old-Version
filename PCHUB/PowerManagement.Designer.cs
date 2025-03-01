@@ -65,7 +65,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { toHubToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(421, 24);
+            menuStrip1.Size = new Size(436, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -80,7 +80,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(421, 111);
+            ClientSize = new Size(436, 111);
             Controls.Add(Restart);
             Controls.Add(Shutdown);
             Controls.Add(menuStrip1);

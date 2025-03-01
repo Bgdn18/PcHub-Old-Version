@@ -132,5 +132,12 @@ namespace PCHUB
             this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
         //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
+
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

@@ -28,7 +28,16 @@ namespace PCHUB
         //ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET 
         private void ZAPRET_Click(object sender, EventArgs e)
         {
-            Process.Start("\"E:\\Моё\\zapret\\zapret-discord-youtube-1.6.2\\general.bat\"");
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "ZAPRET");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "ZAPRET.bat");
+
+            Process.Start(customCmdPath);
         }
         //ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET 
 
@@ -69,6 +78,20 @@ namespace PCHUB
         {
             Browse browser = new Browse(); // Создаем новый экземпляр Form2
             browser.Show(); // Открываем Form2 как независимую форму
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "CUSTOMCMD");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "Automated Console.exe");
+
+            Process.Start(customCmdPath);
             this.Close();
         }
     }

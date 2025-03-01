@@ -1,6 +1,6 @@
 ﻿namespace PCHUB
 {
-    partial class Browse
+    partial class TaskKiller
     {
         /// <summary>
         /// Required designer variable.
@@ -28,65 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Browse));
-            txtSearch = new TextBox();
-            btnSearch = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskKiller));
+            btnKillProcess = new Button();
+            txtProcessName = new TextBox();
             label1 = new Label();
-            Settings = new Button();
             menuStrip1 = new MenuStrip();
             themeToolStripMenuItem = new ToolStripMenuItem();
             whiteToolStripMenuItem = new ToolStripMenuItem();
             purpleToolStripMenuItem = new ToolStripMenuItem();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
             quitToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // txtSearch
+            // btnKillProcess
             // 
-            txtSearch.AccessibleDescription = "";
-            txtSearch.Cursor = Cursors.IBeam;
-            txtSearch.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSearch.Location = new Point(12, 39);
-            txtSearch.Multiline = true;
-            txtSearch.Name = "txtSearch";
-            txtSearch.PlaceholderText = "Browse in your defoult browser!";
-            txtSearch.Size = new Size(776, 132);
-            txtSearch.TabIndex = 0;
-            txtSearch.TextChanged += txtSearch_TextChanged;
+            btnKillProcess.Font = new Font("Ink Free", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKillProcess.Location = new Point(12, 174);
+            btnKillProcess.Name = "btnKillProcess";
+            btnKillProcess.Size = new Size(118, 59);
+            btnKillProcess.TabIndex = 0;
+            btnKillProcess.Text = "KILL";
+            btnKillProcess.UseVisualStyleBackColor = true;
+            btnKillProcess.Click += btnKillProcess_Click;
             // 
-            // btnSearch
+            // txtProcessName
             // 
-            btnSearch.Cursor = Cursors.Hand;
-            btnSearch.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSearch.Location = new Point(12, 177);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(178, 65);
-            btnSearch.TabIndex = 1;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = true;
-            btnSearch.Click += btnSearch_Click;
+            txtProcessName.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtProcessName.Location = new Point(12, 37);
+            txtProcessName.Multiline = true;
+            txtProcessName.Name = "txtProcessName";
+            txtProcessName.PlaceholderText = "PCHUB";
+            txtProcessName.Size = new Size(776, 131);
+            txtProcessName.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(500, 418);
+            label1.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(622, 236);
             label1.Name = "label1";
-            label1.Size = new Size(156, 15);
+            label1.Size = new Size(166, 34);
             label1.TabIndex = 2;
-            label1.Text = "Set up your defoult browser:";
-            // 
-            // Settings
-            // 
-            Settings.Cursor = Cursors.Hand;
-            Settings.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Settings.Location = new Point(662, 396);
-            Settings.Name = "Settings";
-            Settings.Size = new Size(126, 48);
-            Settings.TabIndex = 3;
-            Settings.Text = "Settings";
-            Settings.UseVisualStyleBackColor = true;
-            Settings.Click += Settings_Click;
+            label1.Text = "TASKKILLER";
             // 
             // menuStrip1
             // 
@@ -94,7 +78,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 4;
+            menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
             // themeToolStripMenuItem
@@ -107,23 +91,16 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(180, 22);
+            whiteToolStripMenuItem.Size = new Size(108, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(180, 22);
+            purpleToolStripMenuItem.Size = new Size(108, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click_1;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(52, 20);
-            aboutToolStripMenuItem.Text = "About";
-            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // quitToolStripMenuItem
             // 
@@ -132,21 +109,26 @@
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
-            // Browse
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(52, 20);
+            aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            // 
+            // TaskKiller
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(800, 450);
-            Controls.Add(Settings);
+            ClientSize = new Size(800, 279);
             Controls.Add(label1);
-            Controls.Add(btnSearch);
-            Controls.Add(txtSearch);
+            Controls.Add(txtProcessName);
+            Controls.Add(btnKillProcess);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Name = "Browse";
-            Text = "Browse";
+            Name = "TaskKiller";
+            Text = "TaskKiller";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -155,15 +137,14 @@
 
         #endregion
 
-        private TextBox txtSearch;
-        private Button btnSearch;
+        private Button btnKillProcess;
+        private TextBox txtProcessName;
         private Label label1;
-        private Button Settings;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem themeToolStripMenuItem;
-        private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem quitToolStripMenuItem;
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
+        private ToolStripMenuItem quitToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

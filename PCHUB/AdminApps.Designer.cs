@@ -52,12 +52,12 @@
             // 
             TxtWriter.Anchor = AnchorStyles.None;
             TxtWriter.Cursor = Cursors.Hand;
-            TxtWriter.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtWriter.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtWriter.Location = new Point(14, 44);
             TxtWriter.Name = "TxtWriter";
             TxtWriter.Size = new Size(128, 50);
             TxtWriter.TabIndex = 19;
-            TxtWriter.Text = "TXT-Writer";
+            TxtWriter.Text = ".TXT Writer";
             TxtWriter.UseVisualStyleBackColor = true;
             TxtWriter.Click += TxtWriter_Click;
             // 
@@ -65,7 +65,7 @@
             // 
             RESOURCEMONITOR.Anchor = AnchorStyles.None;
             RESOURCEMONITOR.Cursor = Cursors.Hand;
-            RESOURCEMONITOR.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RESOURCEMONITOR.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             RESOURCEMONITOR.Location = new Point(148, 44);
             RESOURCEMONITOR.Name = "RESOURCEMONITOR";
             RESOURCEMONITOR.Size = new Size(128, 50);
@@ -91,7 +91,7 @@
             // 
             CONTROLPANEL.Anchor = AnchorStyles.None;
             CONTROLPANEL.Cursor = Cursors.Hand;
-            CONTROLPANEL.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CONTROLPANEL.Font = new Font("Comic Sans MS", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CONTROLPANEL.Location = new Point(416, 45);
             CONTROLPANEL.Name = "CONTROLPANEL";
             CONTROLPANEL.Size = new Size(128, 50);
@@ -175,6 +175,7 @@
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             quitToolStripMenuItem.Size = new Size(42, 20);
             quitToolStripMenuItem.Text = "Quit";
+            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // label1
             // 

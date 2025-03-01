@@ -22,3 +22,5 @@ C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.PowerMa
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.Programs.resources
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.AdminApps.resources
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.Browse.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.sourcelink.json
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Release\net8.0-windows\PCHUB.TaskKiller.resources

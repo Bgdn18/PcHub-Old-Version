@@ -43,11 +43,11 @@
             pictureBox1 = new PictureBox();
             build = new Label();
             ALL = new Button();
-            label2 = new Label();
             TxtWriter = new Button();
             label3 = new Label();
             Settings = new Button();
             button1 = new Button();
+            Taskkiller = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -61,7 +61,7 @@
             PowerManagement.Name = "PowerManagement";
             PowerManagement.Size = new Size(174, 53);
             PowerManagement.TabIndex = 0;
-            PowerManagement.Text = "Power management";
+            PowerManagement.Text = "Power \r\nmanagement";
             PowerManagement.UseVisualStyleBackColor = true;
             PowerManagement.Click += PowerManagement_Click;
             // 
@@ -87,7 +87,7 @@
             ADMIN.Name = "ADMIN";
             ADMIN.Size = new Size(174, 53);
             ADMIN.TabIndex = 2;
-            ADMIN.Text = "ADMIN";
+            ADMIN.Text = "System";
             ADMIN.UseVisualStyleBackColor = true;
             ADMIN.Click += ADMIN_Click;
             // 
@@ -95,10 +95,10 @@
             // 
             CMD.Cursor = Cursors.Hand;
             CMD.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CMD.Location = new Point(552, 38);
+            CMD.Location = new Point(384, 342);
             CMD.Margin = new Padding(4, 3, 4, 3);
             CMD.Name = "CMD";
-            CMD.Size = new Size(174, 53);
+            CMD.Size = new Size(87, 70);
             CMD.TabIndex = 3;
             CMD.Text = "CMD";
             CMD.UseVisualStyleBackColor = true;
@@ -146,6 +146,7 @@
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             quitToolStripMenuItem.Size = new Size(42, 20);
             quitToolStripMenuItem.Text = "Quit";
+            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // label1
             // 
@@ -185,46 +186,33 @@
             build.Location = new Point(0, 414);
             build.Margin = new Padding(4, 0, 4, 0);
             build.Name = "build";
-            build.Size = new Size(75, 20);
+            build.Size = new Size(81, 20);
             build.TabIndex = 10;
-            build.Text = "BUILD: 1.1";
+            build.Text = "BUILD: 1.11";
             // 
             // ALL
             // 
             ALL.Cursor = Cursors.Hand;
-            ALL.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ALL.Location = new Point(482, 342);
+            ALL.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ALL.Location = new Point(372, 97);
             ALL.Margin = new Padding(4, 3, 4, 3);
             ALL.Name = "ALL";
-            ALL.Size = new Size(158, 70);
+            ALL.Size = new Size(174, 53);
             ALL.TabIndex = 11;
-            ALL.Text = "AllPcHubLibrary";
+            ALL.Text = "Library";
             ALL.UseVisualStyleBackColor = true;
             ALL.Click += ALL_Click;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(522, 415);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 27);
-            label2.TabIndex = 12;
-            label2.Text = "Library";
             // 
             // TxtWriter
             // 
             TxtWriter.Cursor = Cursors.Hand;
             TxtWriter.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TxtWriter.Location = new Point(318, 342);
+            TxtWriter.Location = new Point(479, 342);
             TxtWriter.Margin = new Padding(4, 3, 4, 3);
             TxtWriter.Name = "TxtWriter";
             TxtWriter.Size = new Size(158, 70);
             TxtWriter.TabIndex = 13;
-            TxtWriter.Text = "Txt Writer";
+            TxtWriter.Text = ".Txt Writer";
             TxtWriter.UseVisualStyleBackColor = true;
             TxtWriter.Click += TxtWriter_Click;
             // 
@@ -234,7 +222,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(333, 418);
+            label3.Location = new Point(496, 419);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(132, 23);
@@ -245,25 +233,38 @@
             // 
             Settings.Cursor = Cursors.Hand;
             Settings.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Settings.Location = new Point(12, 97);
+            Settings.Location = new Point(554, 39);
             Settings.Margin = new Padding(4, 3, 4, 3);
             Settings.Name = "Settings";
             Settings.Size = new Size(174, 53);
             Settings.TabIndex = 15;
-            Settings.Text = "Settings";
+            Settings.Text = "Settings Microsoft";
             Settings.UseVisualStyleBackColor = true;
             Settings.Click += Settings_Click;
             // 
             // button1
             // 
-            button1.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(132, 345);
+            button1.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(12, 97);
             button1.Name = "button1";
-            button1.Size = new Size(179, 66);
+            button1.Size = new Size(174, 53);
             button1.TabIndex = 16;
             button1.Text = "Browse in your \r\ndefoult browser";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // Taskkiller
+            // 
+            Taskkiller.Cursor = Cursors.Hand;
+            Taskkiller.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Taskkiller.Location = new Point(192, 97);
+            Taskkiller.Margin = new Padding(4, 3, 4, 3);
+            Taskkiller.Name = "Taskkiller";
+            Taskkiller.Size = new Size(174, 53);
+            Taskkiller.TabIndex = 17;
+            Taskkiller.Text = "Taskkiller";
+            Taskkiller.UseVisualStyleBackColor = true;
+            Taskkiller.Click += Taskkiller_Click;
             // 
             // MAIN
             // 
@@ -271,11 +272,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(Taskkiller);
             Controls.Add(button1);
             Controls.Add(Settings);
             Controls.Add(label3);
             Controls.Add(TxtWriter);
-            Controls.Add(label2);
             Controls.Add(ALL);
             Controls.Add(build);
             Controls.Add(label1);
@@ -314,10 +315,10 @@
         private PictureBox pictureBox1;
         private Label build;
         private Button ALL;
-        private Label label2;
         private Button TxtWriter;
         private Label label3;
         private Button Settings;
         private Button button1;
+        private Button Taskkiller;
     }
 }
