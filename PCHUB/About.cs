@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 namespace PCHUB
 {
     public partial class About : Form
@@ -14,16 +15,23 @@ namespace PCHUB
             this.MaximizeBox = false;
         }
 
-        private void bACKToolStripMenuItem_Click(object sender, EventArgs e)
+        //EASTER EGGEASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG 
+        private void label2_Click(object sender, EventArgs e)
         {
-            MAIN Main = new MAIN(); // Создаем новый экземпляр Form2
-            Main.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
-        }
+            Random rand = new Random();
 
-        private void About_Load(object sender, EventArgs e)
-        {
+                this.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                ABOUTTEXT.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                label1.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                PCHUB.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                label2.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+
+                ABOUTTEXT.ForeColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                label1.ForeColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                PCHUB.ForeColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+                label2.ForeColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
 
         }
+        //EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG EASTER EGG
     }
 }

@@ -43,13 +43,12 @@
             purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             toolStripComboBox1 = new ToolStripSeparator();
-            toHubToolStripMenuItem = new ToolStripMenuItem();
-            qToolStripMenuItem = new ToolStripMenuItem();
             build = new Label();
             TxtWriter = new Button();
             Google = new Button();
             Browse = new Button();
             Taskkiller = new Button();
+            YouTube = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -161,7 +160,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem, toHubToolStripMenuItem, qToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -178,14 +177,14 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(108, 22);
+            whiteToolStripMenuItem.Size = new Size(180, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(108, 22);
+            purpleToolStripMenuItem.Size = new Size(180, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click;
             // 
@@ -201,20 +200,6 @@
             // 
             toolStripComboBox1.Name = "toolStripComboBox1";
             toolStripComboBox1.Size = new Size(57, 6);
-            // 
-            // toHubToolStripMenuItem
-            // 
-            toHubToolStripMenuItem.Name = "toHubToolStripMenuItem";
-            toHubToolStripMenuItem.Size = new Size(58, 20);
-            toHubToolStripMenuItem.Text = "To Hub";
-            toHubToolStripMenuItem.Click += toHubToolStripMenuItem_Click;
-            // 
-            // qToolStripMenuItem
-            // 
-            qToolStripMenuItem.Name = "qToolStripMenuItem";
-            qToolStripMenuItem.Size = new Size(42, 20);
-            qToolStripMenuItem.Text = "Quit";
-            qToolStripMenuItem.Click += qToolStripMenuItem_Click;
             // 
             // build
             // 
@@ -280,12 +265,26 @@
             Taskkiller.UseVisualStyleBackColor = true;
             Taskkiller.Click += Taskkiller_Click;
             // 
+            // YouTube
+            // 
+            YouTube.Anchor = AnchorStyles.None;
+            YouTube.Cursor = Cursors.Hand;
+            YouTube.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            YouTube.Location = new Point(281, 159);
+            YouTube.Name = "YouTube";
+            YouTube.Size = new Size(128, 50);
+            YouTube.TabIndex = 19;
+            YouTube.Text = "YouTube";
+            YouTube.UseVisualStyleBackColor = true;
+            YouTube.Click += YouTube_Click;
+            // 
             // PcHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RebeccaPurple;
             ClientSize = new Size(800, 450);
+            Controls.Add(YouTube);
             Controls.Add(Taskkiller);
             Controls.Add(Browse);
             Controls.Add(Google);
@@ -326,14 +325,13 @@
         private ToolStripMenuItem themeToolStripMenuItem;
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
-        private ToolStripMenuItem qToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripSeparator toolStripComboBox1;
         private Label build;
         private Button TxtWriter;
         private Button Google;
-        private ToolStripMenuItem toHubToolStripMenuItem;
         private Button Browse;
         private Button Taskkiller;
+        private Button YouTube;
     }
 }

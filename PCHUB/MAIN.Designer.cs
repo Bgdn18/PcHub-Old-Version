@@ -39,15 +39,16 @@
             purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             quitToolStripMenuItem = new ToolStripMenuItem();
-            label1 = new Label();
+            CUSTOMCMD_TEXT = new Label();
             pictureBox1 = new PictureBox();
             build = new Label();
             ALL = new Button();
             TxtWriter = new Button();
-            label3 = new Label();
+            ADDTXTFILE_TEXT = new Label();
             Settings = new Button();
             button1 = new Button();
             Taskkiller = new Button();
+            YOUTUBE = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -106,6 +107,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.Silver;
             menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -148,19 +150,21 @@
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
-            // label1
+            // CUSTOMCMD_TEXT
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(663, 419);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(124, 23);
-            label1.TabIndex = 9;
-            label1.Text = "CUSTOM CMD";
-            label1.Click += label1_Click;
+            CUSTOMCMD_TEXT.Anchor = AnchorStyles.None;
+            CUSTOMCMD_TEXT.AutoSize = true;
+            CUSTOMCMD_TEXT.BorderStyle = BorderStyle.Fixed3D;
+            CUSTOMCMD_TEXT.Cursor = Cursors.Hand;
+            CUSTOMCMD_TEXT.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            CUSTOMCMD_TEXT.ForeColor = Color.Black;
+            CUSTOMCMD_TEXT.Location = new Point(661, 419);
+            CUSTOMCMD_TEXT.Margin = new Padding(4, 0, 4, 0);
+            CUSTOMCMD_TEXT.Name = "CUSTOMCMD_TEXT";
+            CUSTOMCMD_TEXT.Size = new Size(126, 25);
+            CUSTOMCMD_TEXT.TabIndex = 9;
+            CUSTOMCMD_TEXT.Text = "CUSTOM CMD";
+            CUSTOMCMD_TEXT.Click += label1_Click;
             // 
             // pictureBox1
             // 
@@ -181,6 +185,7 @@
             // 
             build.AutoSize = true;
             build.BackColor = Color.Gray;
+            build.Cursor = Cursors.Hand;
             build.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             build.ForeColor = Color.White;
             build.Location = new Point(0, 414);
@@ -189,6 +194,7 @@
             build.Size = new Size(81, 20);
             build.TabIndex = 10;
             build.Text = "BUILD: 1.11";
+            build.Click += build_Click;
             // 
             // ALL
             // 
@@ -216,18 +222,21 @@
             TxtWriter.UseVisualStyleBackColor = true;
             TxtWriter.Click += TxtWriter_Click;
             // 
-            // label3
+            // ADDTXTFILE_TEXT
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(496, 419);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(132, 23);
-            label3.TabIndex = 14;
-            label3.Text = "ADD TXT FILE";
+            ADDTXTFILE_TEXT.Anchor = AnchorStyles.None;
+            ADDTXTFILE_TEXT.AutoSize = true;
+            ADDTXTFILE_TEXT.BorderStyle = BorderStyle.Fixed3D;
+            ADDTXTFILE_TEXT.Cursor = Cursors.Hand;
+            ADDTXTFILE_TEXT.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ADDTXTFILE_TEXT.ForeColor = Color.Black;
+            ADDTXTFILE_TEXT.Location = new Point(496, 419);
+            ADDTXTFILE_TEXT.Margin = new Padding(4, 0, 4, 0);
+            ADDTXTFILE_TEXT.Name = "ADDTXTFILE_TEXT";
+            ADDTXTFILE_TEXT.Size = new Size(134, 25);
+            ADDTXTFILE_TEXT.TabIndex = 14;
+            ADDTXTFILE_TEXT.Text = "ADD TXT FILE";
+            ADDTXTFILE_TEXT.Click += ADDTXTFILE_TEXT_Click;
             // 
             // Settings
             // 
@@ -266,20 +275,32 @@
             Taskkiller.UseVisualStyleBackColor = true;
             Taskkiller.Click += Taskkiller_Click;
             // 
+            // YOUTUBE
+            // 
+            YOUTUBE.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            YOUTUBE.Location = new Point(12, 156);
+            YOUTUBE.Name = "YOUTUBE";
+            YOUTUBE.Size = new Size(174, 53);
+            YOUTUBE.TabIndex = 18;
+            YOUTUBE.Text = "YouTube ";
+            YOUTUBE.UseVisualStyleBackColor = true;
+            YOUTUBE.Click += YOUTUBE_Click;
+            // 
             // MAIN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(YOUTUBE);
             Controls.Add(Taskkiller);
             Controls.Add(button1);
             Controls.Add(Settings);
-            Controls.Add(label3);
+            Controls.Add(ADDTXTFILE_TEXT);
             Controls.Add(TxtWriter);
             Controls.Add(ALL);
             Controls.Add(build);
-            Controls.Add(label1);
+            Controls.Add(CUSTOMCMD_TEXT);
             Controls.Add(pictureBox1);
             Controls.Add(CMD);
             Controls.Add(ADMIN);
@@ -311,14 +332,15 @@
         private ToolStripMenuItem purpleToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem quitToolStripMenuItem;
-        private Label label1;
+        private Label CUSTOMCMD_TEXT;
         private PictureBox pictureBox1;
         private Label build;
         private Button ALL;
         private Button TxtWriter;
-        private Label label3;
+        private Label ADDTXTFILE_TEXT;
         private Button Settings;
         private Button button1;
         private Button Taskkiller;
+        private Button YOUTUBE;
     }
 }

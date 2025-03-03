@@ -39,13 +39,16 @@
             whiteToolStripMenuItem = new ToolStripMenuItem();
             purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
-            quitToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
+            txtExtension = new TextBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // txtFilePath
             // 
+            txtFilePath.Cursor = Cursors.IBeam;
             txtFilePath.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
             txtFilePath.Location = new Point(12, 28);
             txtFilePath.Multiline = true;
@@ -53,17 +56,19 @@
             txtFilePath.PlaceholderText = "TXT Path";
             txtFilePath.Size = new Size(621, 27);
             txtFilePath.TabIndex = 0;
+            txtFilePath.Text = "C:\\";
             // 
             // btnCreateFile
             // 
-            btnCreateFile.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCreateFile.Cursor = Cursors.Hand;
+            btnCreateFile.Font = new Font("Comic Sans MS", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCreateFile.Location = new Point(639, 28);
             btnCreateFile.Name = "btnCreateFile";
             btnCreateFile.Size = new Size(344, 63);
             btnCreateFile.TabIndex = 1;
             btnCreateFile.Text = "Create TXT File";
             btnCreateFile.UseVisualStyleBackColor = true;
-            btnCreateFile.Click += button1_Click;
+            btnCreateFile.Click += btnCreateFile_Click;
             // 
             // lblStatus
             // 
@@ -77,6 +82,7 @@
             // 
             // txtFileName
             // 
+            txtFileName.Cursor = Cursors.IBeam;
             txtFileName.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtFileName.Location = new Point(12, 68);
             txtFileName.Multiline = true;
@@ -84,21 +90,23 @@
             txtFileName.PlaceholderText = "TXT Name";
             txtFileName.Size = new Size(621, 27);
             txtFileName.TabIndex = 3;
-            txtFileName.TextChanged += txtFileName_TextChanged;
             // 
             // txtFileContent
             // 
-            txtFileContent.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
-            txtFileContent.Location = new Point(12, 101);
+            txtFileContent.Cursor = Cursors.IBeam;
+            txtFileContent.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtFileContent.Location = new Point(12, 133);
             txtFileContent.Multiline = true;
             txtFileContent.Name = "txtFileContent";
             txtFileContent.PlaceholderText = "TXT File";
-            txtFileContent.Size = new Size(621, 498);
+            txtFileContent.ScrollBars = ScrollBars.Both;
+            txtFileContent.Size = new Size(621, 466);
             txtFileContent.TabIndex = 4;
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { themesToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem });
+            menuStrip1.BackColor = Color.Silver;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { themesToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(994, 24);
@@ -115,14 +123,14 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(108, 22);
+            whiteToolStripMenuItem.Size = new Size(180, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(108, 22);
+            purpleToolStripMenuItem.Size = new Size(180, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click_1;
             // 
@@ -132,13 +140,6 @@
             aboutToolStripMenuItem.Size = new Size(52, 20);
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
-            // 
-            // quitToolStripMenuItem
-            // 
-            quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            quitToolStripMenuItem.Size = new Size(42, 20);
-            quitToolStripMenuItem.Text = "Quit";
-            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // label1
             // 
@@ -150,11 +151,51 @@
             label1.TabIndex = 6;
             label1.Text = "Use \"\" for hidden file\r\n";
             // 
+            // txtExtension
+            // 
+            txtExtension.Cursor = Cursors.IBeam;
+            txtExtension.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtExtension.Location = new Point(12, 101);
+            txtExtension.Multiline = true;
+            txtExtension.Name = "txtExtension";
+            txtExtension.PlaceholderText = "Extension";
+            txtExtension.Size = new Size(621, 27);
+            txtExtension.TabIndex = 7;
+            txtExtension.Text = ".txt";
+            // 
+            // textBox1
+            // 
+            textBox1.Cursor = Cursors.IBeam;
+            textBox1.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
+            textBox1.Location = new Point(639, 179);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(350, 51);
+            textBox1.TabIndex = 10;
+            textBox1.Text = "use \"16DigiCode_\" and \"_16DigiCode\" at the end\r\n to make the text binary";
+            // 
+            // textBox2
+            // 
+            textBox2.Cursor = Cursors.IBeam;
+            textBox2.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold | FontStyle.Italic);
+            textBox2.Location = new Point(639, 122);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(350, 51);
+            textBox2.TabIndex = 11;
+            textBox2.Text = "use \"isbinary_\" and \"_isbinary\" at the end\r\n to make the text binary";
+            // 
             // TextFileCreator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(994, 611);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(txtExtension);
             Controls.Add(label1);
             Controls.Add(txtFileContent);
             Controls.Add(txtFileName);
@@ -166,7 +207,6 @@
             MainMenuStrip = menuStrip1;
             Name = "TextFileCreator";
             Text = "TextFileCreator";
-            Load += TextFileCreator_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -185,7 +225,9 @@
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem quitToolStripMenuItem;
         private Label label1;
+        private TextBox txtExtension;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

@@ -9,9 +9,13 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace PCHUB
 {
+
+
     public partial class MAIN : Form
     {
         public MAIN()
@@ -45,8 +49,9 @@ namespace PCHUB
         private void whiteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
-            label1.ForeColor = Color.Black;
-            label3.ForeColor = Color.Black;
+            CUSTOMCMD_TEXT.ForeColor = Color.Black;
+            ADDTXTFILE_TEXT.ForeColor = Color.Black;
+            menuStrip1.BackColor = Color.Silver;
         }
         //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
 
@@ -54,8 +59,9 @@ namespace PCHUB
         private void purpleToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.BackColor = Color.BlueViolet;
-            label1.ForeColor = Color.White;
-            label3.ForeColor = Color.White;
+            CUSTOMCMD_TEXT.ForeColor = Color.White;
+            ADDTXTFILE_TEXT.ForeColor = Color.White;
+            menuStrip1.BackColor = Color.Purple;
         }
         //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
 
@@ -75,14 +81,15 @@ namespace PCHUB
             Process.Start(customCmdPath);
             this.Close();
         }
+        //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
+
 
         private void ALL_Click(object sender, EventArgs e)
         {
             PcHub all = new PcHub(); // Создаем новый экземпляр Form2
             all.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
-        //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
+
 
         //TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР 
         private void TxtWriter_Click(object sender, EventArgs e)
@@ -97,7 +104,6 @@ namespace PCHUB
         {
             Programs programs = new Programs(); // Создаем новый экземпляр Form2
             programs.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
         //PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS PROGRAMS 
 
@@ -106,7 +112,6 @@ namespace PCHUB
         {
             AdminApps adminapps = new AdminApps(); // Создаем новый экземпляр Form2
             adminapps.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
         //ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS ADMIN APPS 
 
@@ -145,14 +150,23 @@ namespace PCHUB
 
         private void label1_Click(object sender, EventArgs e)
         {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "CUSTOMCMD");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "Automated Console.exe");
+
+            Process.Start(customCmdPath);
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Browse browser = new Browse(); // Создаем новый экземпляр Form2
-            browser.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
+            Browse Browse = new Browse();
+            Browse.Show();
         }
 
 
@@ -162,11 +176,32 @@ namespace PCHUB
             Application.Exit();
         }
         //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
+
+        //TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER 
         private void Taskkiller_Click(object sender, EventArgs e)
         {
-            TaskKiller killer = new TaskKiller(); // Создаем новый экземпляр Form2
-            killer.Show(); // Открываем Form2 как независимую форму
+            TaskKiller killer = new TaskKiller();
+            killer.Show();
         }
+
+        private void YOUTUBE_Click(object sender, EventArgs e)
+        {
+            YouTube YouTube = new YouTube();
+            YouTube.Show();
+        }
+
+        private void build_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.Show();
+        }
+
+        private void ADDTXTFILE_TEXT_Click(object sender, EventArgs e)
+        {
+            TextFileCreator txtfile = new TextFileCreator();
+            txtfile.Show();
+        }
+        //TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER TASKKILLER 
 
     }
 }

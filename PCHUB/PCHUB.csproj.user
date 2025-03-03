@@ -28,5 +28,8 @@
     <Compile Update="TextFileCreator.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="YouTube.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

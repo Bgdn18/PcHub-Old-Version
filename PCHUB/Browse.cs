@@ -85,13 +85,5 @@ namespace PCHUB
             this.BackColor = Color.BlueViolet;
         }
         //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
-
-
-        private void toHubToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MAIN pchub = new MAIN(); // Создаем новый экземпляр Form2
-            pchub.Show(); // Открываем Form2 как независимую форму
-            this.Close(); // Скрываем текущую форму (Form1), а не закрываем её
-        }
     }
 }

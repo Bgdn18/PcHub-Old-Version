@@ -36,8 +36,8 @@
             themeToolStripMenuItem = new ToolStripMenuItem();
             whiteToolStripMenuItem = new ToolStripMenuItem();
             purpleToolStripMenuItem = new ToolStripMenuItem();
-            quitToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
+            label2 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,9 +58,10 @@
             txtProcessName.Location = new Point(12, 37);
             txtProcessName.Multiline = true;
             txtProcessName.Name = "txtProcessName";
-            txtProcessName.PlaceholderText = "PCHUB";
+            txtProcessName.PlaceholderText = "Example -- PCHUB";
             txtProcessName.Size = new Size(776, 131);
             txtProcessName.TabIndex = 1;
+            txtProcessName.Text = "PCHUB";
             // 
             // label1
             // 
@@ -74,7 +75,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -91,23 +92,16 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(108, 22);
+            whiteToolStripMenuItem.Size = new Size(180, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(108, 22);
+            purpleToolStripMenuItem.Size = new Size(180, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click_1;
-            // 
-            // quitToolStripMenuItem
-            // 
-            quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            quitToolStripMenuItem.Size = new Size(42, 20);
-            quitToolStripMenuItem.Text = "Quit";
-            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
@@ -116,11 +110,22 @@
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 236);
+            label2.Name = "label2";
+            label2.Size = new Size(166, 34);
+            label2.TabIndex = 4;
+            label2.Text = "TASKKILLER";
+            // 
             // TaskKiller
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 279);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtProcessName);
             Controls.Add(btnKillProcess);
@@ -144,7 +149,7 @@
         private ToolStripMenuItem themeToolStripMenuItem;
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
-        private ToolStripMenuItem quitToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
+        private Label label2;
     }
 }

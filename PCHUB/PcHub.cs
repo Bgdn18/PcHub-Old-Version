@@ -174,5 +174,11 @@ namespace PCHUB
             TaskKiller killer = new TaskKiller(); // Создаем новый экземпляр Form2
             killer.Show(); // Открываем Form2 как независимую форму
         }
+
+        private void YouTube_Click(object sender, EventArgs e)
+        {
+            YouTube YouTube = new YouTube(); // Создаем новый экземпляр Form2
+            YouTube.Show(); // Открываем Form2 как независимую форму
+        }
     }
 }

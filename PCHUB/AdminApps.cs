@@ -47,16 +47,6 @@ namespace PCHUB
         }
         //ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU 
 
-        //TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB 
-        private void toHubToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MAIN ToHub = new MAIN(); // Создаем новый экземпляр Form2
-            ToHub.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
-        }
-        //TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB TO HUB 
-
-
         //TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР 
         private void TxtWriter_Click(object sender, EventArgs e)
         {
@@ -124,20 +114,6 @@ namespace PCHUB
             Process.Start(customCmdPath);
             this.Close();
         }
-
-        private void ALL_Click(object sender, EventArgs e)
-        {
-            PcHub all = new PcHub(); // Создаем новый экземпляр Form2
-            all.Show(); // Открываем Form2 как независимую форму
-            this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
-        }
         //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
-
-
-        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
     }
 }

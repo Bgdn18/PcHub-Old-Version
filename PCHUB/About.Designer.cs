@@ -57,6 +57,7 @@
             PCHUB.Size = new Size(149, 45);
             PCHUB.TabIndex = 1;
             PCHUB.Text = "PCHUB";
+            PCHUB.Click += label2_Click;
             // 
             // build
             // 
@@ -91,6 +92,7 @@
             label2.Size = new Size(149, 45);
             label2.TabIndex = 4;
             label2.Text = "PCHUB";
+            label2.Click += label2_Click;
             // 
             // About
             // 
@@ -107,7 +109,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "About";
             Text = "About";
-            Load += About_Load;
             ResumeLayout(false);
             PerformLayout();
         }
