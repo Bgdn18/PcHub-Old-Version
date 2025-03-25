@@ -65,11 +65,11 @@
             build.BackColor = Color.Gray;
             build.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             build.ForeColor = Color.White;
-            build.Location = new Point(506, 182);
+            build.Location = new Point(459, 182);
             build.Name = "build";
-            build.Size = new Size(70, 20);
+            build.Size = new Size(117, 20);
             build.TabIndex = 2;
-            build.Text = "build 1.11";
+            build.Text = "BUILD: 3/5/2025";
             // 
             // label1
             // 

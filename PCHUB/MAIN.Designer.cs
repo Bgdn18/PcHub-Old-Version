@@ -49,6 +49,7 @@
             button1 = new Button();
             Taskkiller = new Button();
             YOUTUBE = new Button();
+            ExplorerPP = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -191,9 +192,9 @@
             build.Location = new Point(0, 414);
             build.Margin = new Padding(4, 0, 4, 0);
             build.Name = "build";
-            build.Size = new Size(81, 20);
+            build.Size = new Size(117, 20);
             build.TabIndex = 10;
-            build.Text = "BUILD: 1.11";
+            build.Text = "BUILD: 3/5/2025";
             build.Click += build_Click;
             // 
             // ALL
@@ -286,12 +287,24 @@
             YOUTUBE.UseVisualStyleBackColor = true;
             YOUTUBE.Click += YOUTUBE_Click;
             // 
+            // ExplorerPP
+            // 
+            ExplorerPP.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ExplorerPP.Location = new Point(192, 156);
+            ExplorerPP.Name = "ExplorerPP";
+            ExplorerPP.Size = new Size(174, 53);
+            ExplorerPP.TabIndex = 19;
+            ExplorerPP.Text = "Explorer++";
+            ExplorerPP.UseVisualStyleBackColor = true;
+            ExplorerPP.Click += ExplorerPP_Click;
+            // 
             // MAIN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(ExplorerPP);
             Controls.Add(YOUTUBE);
             Controls.Add(Taskkiller);
             Controls.Add(button1);
@@ -342,5 +355,6 @@
         private Button button1;
         private Button Taskkiller;
         private Button YOUTUBE;
+        private Button ExplorerPP;
     }
 }

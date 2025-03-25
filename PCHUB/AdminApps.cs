@@ -107,12 +107,26 @@ namespace PCHUB
 
             // Укажите относительный путь к папке CUSTOMCMD
             string customCmdDirectory = Path.Combine(hubDirectory, "CUSTOMCMD");
-
+            
             // Формирование полного пути к Automated Console.exe
             string customCmdPath = Path.Combine(customCmdDirectory, "Automated Console.exe");
 
             Process.Start(customCmdPath);
             this.Close();
+        }
+
+        private void ExplorerPP_Click(object sender, EventArgs e)
+        {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "ExplorerPP");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "Explorer++.exe");
+
+            Process.Start(customCmdPath);
         }
         //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
     }

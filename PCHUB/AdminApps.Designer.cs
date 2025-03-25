@@ -42,6 +42,7 @@
             aboutToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            ExplorerPP = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -143,14 +144,14 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(180, 22);
+            whiteToolStripMenuItem.Size = new Size(108, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(180, 22);
+            purpleToolStripMenuItem.Size = new Size(108, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click;
             // 
@@ -189,11 +190,25 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // ExplorerPP
+            // 
+            ExplorerPP.Anchor = AnchorStyles.None;
+            ExplorerPP.Cursor = Cursors.Hand;
+            ExplorerPP.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ExplorerPP.Location = new Point(148, 100);
+            ExplorerPP.Name = "ExplorerPP";
+            ExplorerPP.Size = new Size(128, 50);
+            ExplorerPP.TabIndex = 23;
+            ExplorerPP.Text = "Explorer++";
+            ExplorerPP.UseVisualStyleBackColor = true;
+            ExplorerPP.Click += ExplorerPP_Click;
+            // 
             // AdminApps
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ExplorerPP);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(TxtWriter);
@@ -230,5 +245,6 @@
         private ToolStripMenuItem aboutToolStripMenuItem;
         private Label label1;
         private PictureBox pictureBox1;
+        private Button ExplorerPP;
     }
 }

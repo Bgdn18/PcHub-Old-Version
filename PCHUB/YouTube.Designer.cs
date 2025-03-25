@@ -1,6 +1,6 @@
 ﻿namespace PCHUB
 {
-    partial class Browse
+    partial class YouTube
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Browse));
-            txtSearch = new TextBox();
-            btnSearch = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YouTube));
             label1 = new Label();
+            btnSearch = new Button();
+            txtSearch = new TextBox();
             Settings = new Button();
             menuStrip1 = new MenuStrip();
             themeToolStripMenuItem = new ToolStripMenuItem();
@@ -41,49 +41,51 @@
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // txtSearch
+            // label1
             // 
-            txtSearch.AccessibleDescription = "";
-            txtSearch.Cursor = Cursors.IBeam;
-            txtSearch.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSearch.Location = new Point(12, 39);
-            txtSearch.Multiline = true;
-            txtSearch.Name = "txtSearch";
-            txtSearch.PlaceholderText = "Browse in your defoult browser!";
-            txtSearch.Size = new Size(776, 132);
-            txtSearch.TabIndex = 0;
-            txtSearch.Text = "google.com";
-            txtSearch.TextChanged += txtSearch_TextChanged;
+            label1.AutoSize = true;
+            label1.Cursor = Cursors.Help;
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(480, 410);
+            label1.Name = "label1";
+            label1.Size = new Size(176, 17);
+            label1.TabIndex = 5;
+            label1.Text = "Set up your defoult browser:";
+            label1.Click += label1_Click;
             // 
             // btnSearch
             // 
             btnSearch.Cursor = Cursors.Hand;
             btnSearch.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSearch.Location = new Point(12, 177);
+            btnSearch.Location = new Point(12, 179);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(178, 65);
-            btnSearch.TabIndex = 1;
+            btnSearch.TabIndex = 4;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
             btnSearch.Click += btnSearch_Click;
             // 
-            // label1
+            // txtSearch
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(500, 418);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Set up your defoult browser:";
+            txtSearch.AccessibleDescription = "";
+            txtSearch.Cursor = Cursors.IBeam;
+            txtSearch.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtSearch.Location = new Point(12, 41);
+            txtSearch.Multiline = true;
+            txtSearch.Name = "txtSearch";
+            txtSearch.PlaceholderText = "Browse in your YouTube!";
+            txtSearch.Size = new Size(776, 132);
+            txtSearch.TabIndex = 3;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // Settings
             // 
             Settings.Cursor = Cursors.Hand;
             Settings.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Settings.Location = new Point(662, 396);
+            Settings.Location = new Point(662, 390);
             Settings.Name = "Settings";
             Settings.Size = new Size(126, 48);
-            Settings.TabIndex = 3;
+            Settings.TabIndex = 6;
             Settings.Text = "Settings";
             Settings.UseVisualStyleBackColor = true;
             Settings.Click += Settings_Click;
@@ -94,7 +96,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 4;
+            menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
             // themeToolStripMenuItem
@@ -107,14 +109,14 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(108, 22);
+            whiteToolStripMenuItem.Size = new Size(180, 22);
             whiteToolStripMenuItem.Text = "White";
-            whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
+            whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click_1;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(108, 22);
+            purpleToolStripMenuItem.Size = new Size(180, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click_1;
             // 
@@ -125,21 +127,19 @@
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
-            // Browse
+            // YouTube
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
             Controls.Add(Settings);
             Controls.Add(label1);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
-            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MainMenuStrip = menuStrip1;
-            Name = "Browse";
-            Text = "Browse";
+            Name = "YouTube";
+            Text = "YouTube";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -148,14 +148,14 @@
 
         #endregion
 
-        private TextBox txtSearch;
-        private Button btnSearch;
         private Label label1;
+        private Button btnSearch;
+        private TextBox txtSearch;
         private Button Settings;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem themeToolStripMenuItem;
-        private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

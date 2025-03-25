@@ -1,20 +1,20 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PCHUB
 {
-    public partial class Browse : Form
+    public partial class YouTube : Form
     {
-        public Browse()
+        public YouTube()
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -42,7 +42,7 @@ namespace PCHUB
             if (!string.IsNullOrWhiteSpace(query))
             {
                 // Формируем URL для поиска
-                string url = "https://" +  Uri.EscapeDataString(query);
+                string url = "https://www.youtube.com/results?search_query=" + Uri.EscapeDataString(query);
 
                 try
                 {
@@ -73,7 +73,7 @@ namespace PCHUB
         }
 
         //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
-        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void whiteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
         }
@@ -84,6 +84,24 @@ namespace PCHUB
         {
             this.BackColor = Color.BlueViolet;
         }
-        //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            {
+                // Формируем URL для поиска
+                string url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+                try
+                {
+                    // Открытие браузера по умолчанию
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ошибка при открытии браузера: " + ex.Message);
+                }
+            }
+            //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
+        }
     }
 }

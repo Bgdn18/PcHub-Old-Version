@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\krati\\source\\repos\\PCHUB\\",
+  "WorkspaceRootPath": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|e:\\\u043C\u043E\u0451\\c#\\repos\\pchub\\pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\pchub\\browse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\browse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|e:\\\u043C\u043E\u0451\\c#\\repos\\pchub\\pchub\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\pchub\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|e:\\\u043C\u043E\u0451\\c#\\repos\\pchub\\pchub\\browse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\browse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,25 +46,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cs",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\About.cs",
+              "RelativeDocumentMoniker": "PCHUB\\About.cs",
+              "ToolTip": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\About.cs",
+              "RelativeToolTip": "PCHUB\\About.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T21:43:47.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\About.cs",
+              "RelativeDocumentMoniker": "PCHUB\\About.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\About.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T21:43:30.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Browse.cs",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\Browse.cs",
+              "RelativeDocumentMoniker": "PCHUB\\Browse.cs",
+              "ToolTip": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\Browse.cs",
+              "RelativeToolTip": "PCHUB\\Browse.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAACwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:41:38.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Browse.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\Browse.cs",
+              "RelativeDocumentMoniker": "PCHUB\\Browse.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Browse.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:41:36.208Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MAIN.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\MAIN.cs",
+              "Title": "MAIN.cs [Design]",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\MAIN.cs",
               "RelativeDocumentMoniker": "PCHUB\\MAIN.cs",
-              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\MAIN.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "PCHUB\\MAIN.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\MAIN.cs [Design]",
+              "RelativeToolTip": "PCHUB\\MAIN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T15:34:17.949Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MAIN.cs",
-              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\MAIN.cs",
+              "DocumentMoniker": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\MAIN.cs",
               "RelativeDocumentMoniker": "PCHUB\\MAIN.cs",
-              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\MAIN.cs",
+              "ToolTip": "E:\\\u041C\u043E\u0451\\C#\\repos\\PCHUB\\PCHUB\\MAIN.cs",
               "RelativeToolTip": "PCHUB\\MAIN.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAQwKgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-01T05:19:41.011Z",
               "EditorCaption": ""

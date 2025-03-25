@@ -43,7 +43,6 @@
             purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             toolStripComboBox1 = new ToolStripSeparator();
-            build = new Label();
             TxtWriter = new Button();
             Google = new Button();
             Browse = new Button();
@@ -177,14 +176,14 @@
             // whiteToolStripMenuItem
             // 
             whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(180, 22);
+            whiteToolStripMenuItem.Size = new Size(108, 22);
             whiteToolStripMenuItem.Text = "White";
             whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click;
             // 
             // purpleToolStripMenuItem
             // 
             purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(180, 22);
+            purpleToolStripMenuItem.Size = new Size(108, 22);
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click;
             // 
@@ -200,18 +199,6 @@
             // 
             toolStripComboBox1.Name = "toolStripComboBox1";
             toolStripComboBox1.Size = new Size(57, 6);
-            // 
-            // build
-            // 
-            build.AutoSize = true;
-            build.BackColor = Color.Gray;
-            build.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            build.ForeColor = Color.White;
-            build.Location = new Point(0, 415);
-            build.Name = "build";
-            build.Size = new Size(81, 20);
-            build.TabIndex = 9;
-            build.Text = "BUILD: 1.11";
             // 
             // TxtWriter
             // 
@@ -289,7 +276,6 @@
             Controls.Add(Browse);
             Controls.Add(Google);
             Controls.Add(TxtWriter);
-            Controls.Add(build);
             Controls.Add(label1);
             Controls.Add(RESOURCEMONITOR);
             Controls.Add(REGEDIT);
@@ -327,7 +313,6 @@
         private ToolStripMenuItem purpleToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripSeparator toolStripComboBox1;
-        private Label build;
         private Button TxtWriter;
         private Button Google;
         private Button Browse;
