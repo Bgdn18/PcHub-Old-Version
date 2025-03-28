@@ -33,13 +33,14 @@
             Restart = new Button();
             menuStrip1 = new MenuStrip();
             toHubToolStripMenuItem = new ToolStripMenuItem();
+            quitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // Shutdown
             // 
             Shutdown.Cursor = Cursors.Hand;
-            Shutdown.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Shutdown.Font = new Font("Consolas", 9.75F);
             Shutdown.Location = new Point(12, 27);
             Shutdown.Name = "Shutdown";
             Shutdown.Size = new Size(193, 58);
@@ -51,7 +52,7 @@
             // Restart
             // 
             Restart.Cursor = Cursors.Hand;
-            Restart.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Restart.Font = new Font("Consolas", 9.75F);
             Restart.Location = new Point(216, 27);
             Restart.Name = "Restart";
             Restart.Size = new Size(193, 58);
@@ -62,31 +63,41 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toHubToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toHubToolStripMenuItem, quitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(436, 24);
+            menuStrip1.Size = new Size(419, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
             // toHubToolStripMenuItem
             // 
             toHubToolStripMenuItem.Name = "toHubToolStripMenuItem";
-            toHubToolStripMenuItem.Size = new Size(58, 20);
+            toHubToolStripMenuItem.Size = new Size(57, 20);
             toHubToolStripMenuItem.Text = "To Hub";
             toHubToolStripMenuItem.Click += toHubToolStripMenuItem_Click;
+            // 
+            // quitToolStripMenuItem
+            // 
+            quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            quitToolStripMenuItem.Size = new Size(42, 20);
+            quitToolStripMenuItem.Text = "Quit";
+            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // PowerManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(436, 111);
+            ClientSize = new Size(419, 94);
             Controls.Add(Restart);
             Controls.Add(Shutdown);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "PowerManagement";
+            ShowIcon = false;
             Text = "PowerManagement";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -100,5 +111,6 @@
         private Button Restart;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem toHubToolStripMenuItem;
+        private ToolStripMenuItem quitToolStripMenuItem;
     }
 }

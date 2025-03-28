@@ -32,7 +32,6 @@
             ABOUTTEXT = new Label();
             PCHUB = new Label();
             build = new Label();
-            label1 = new Label();
             label2 = new Label();
             SuspendLayout();
             // 
@@ -43,13 +42,14 @@
             ABOUTTEXT.ForeColor = Color.FromArgb(64, 0, 64);
             ABOUTTEXT.Location = new Point(12, 9);
             ABOUTTEXT.Name = "ABOUTTEXT";
-            ABOUTTEXT.Size = new Size(306, 69);
+            ABOUTTEXT.Size = new Size(297, 23);
             ABOUTTEXT.TabIndex = 0;
-            ABOUTTEXT.Text = "Сделано \"Bogodan\" \r\nНамерено на личное использование.\r\nо а еще 1812 посхалка лол";
+            ABOUTTEXT.Text = "Сделано \"Bogodan\" для Nedohackers";
             // 
             // PCHUB
             // 
             PCHUB.AutoSize = true;
+            PCHUB.Cursor = Cursors.Hand;
             PCHUB.Font = new Font("Constantia", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             PCHUB.ForeColor = Color.Purple;
             PCHUB.Location = new Point(12, 157);
@@ -65,26 +65,16 @@
             build.BackColor = Color.Gray;
             build.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             build.ForeColor = Color.White;
-            build.Location = new Point(506, 182);
+            build.Location = new Point(459, 182);
             build.Name = "build";
-            build.Size = new Size(70, 20);
+            build.Size = new Size(117, 20);
             build.TabIndex = 2;
-            build.Text = "build 1.11";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(64, 0, 64);
-            label1.Location = new Point(12, 91);
-            label1.Name = "label1";
-            label1.Size = new Size(486, 57);
-            label1.TabIndex = 3;
-            label1.Text = "Вместе с продуктом в комплект должны идти \"Zapret\", \"CUSTOMCMD\" \r\nубедитесь что они находятся в корневой папке с PCHUB, \r\nэто гарантирует стабильность.";
+            build.Text = "BUILD: 3/5/2025";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Constantia", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Purple;
             label2.Location = new Point(427, 9);
@@ -101,12 +91,13 @@
             BackColor = Color.LightGray;
             ClientSize = new Size(588, 211);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(build);
             Controls.Add(PCHUB);
             Controls.Add(ABOUTTEXT);
             ForeColor = SystemColors.ControlLight;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "About";
             Text = "About";
             ResumeLayout(false);
@@ -118,7 +109,6 @@
         private Label ABOUTTEXT;
         private Label PCHUB;
         private Label build;
-        private Label label1;
         private Label label2;
     }
 }

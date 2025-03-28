@@ -74,6 +74,11 @@ namespace PCHUB
             About about = new About(); // Создаем новый экземпляр Form2
             about.Show(); // Открываем Form2 как независимую форму
         }
+
+        private void quitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
     }
 }

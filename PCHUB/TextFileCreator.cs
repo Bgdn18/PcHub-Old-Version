@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Linq;
+using System.Diagnostics;
 
 namespace PCHUB
 {
@@ -16,7 +17,9 @@ namespace PCHUB
         {
             InitializeComponent();
             ConfigureInitialUI();
+            this.FileExplorer.Click += PCHUB.FileExplorer_Click;
         }
+        private Library PCHUB = new Library();
 
         private void ConfigureInitialUI()
         {
@@ -150,10 +153,37 @@ namespace PCHUB
         {
             Application.Exit();
         }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void lblStatus_Click(object sender, EventArgs e)
         {
-            // Обработка кликов по меню
+            string path = txtFilePath.Text.Trim();
+
+            if (string.IsNullOrEmpty(path))
+            {
+                MessageBox.Show("Enter the path in the text field");
+                return;
+            }
+
+            try
+            {
+                if (File.Exists(path))
+                {
+                    // Открыть проводник с выделенным файлом
+                    Process.Start("explorer.exe", $"/select, \"{path}\"");
+                }
+                else if (Directory.Exists(path))
+                {
+                    // Открыть проводник в указанной папке
+                    Process.Start("explorer.exe", path);
+                }
+                else
+                {
+                    MessageBox.Show("The specified path does not exist");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}");
+            }
         }
     }
 }

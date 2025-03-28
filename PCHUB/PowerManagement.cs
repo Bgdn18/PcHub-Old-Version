@@ -37,5 +37,10 @@ namespace PCHUB
             ToHub.Show(); // Открываем Form2 как независимую форму
             this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

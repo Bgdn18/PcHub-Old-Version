@@ -19,7 +19,11 @@ namespace PCHUB
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.CMD.Click += PCHUBcmd.CMD_Click; // Привязка к методу из AdminApps
+            this.AddLocalUser.Click += PCHUBlocalUser.LocalUser_Click; // Привязка к методу из AdminApps
         }
+        private Library PCHUBcmd = new Library();
+        private Library PCHUBlocalUser = new Library();
 
         //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
         private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,6 +56,7 @@ namespace PCHUB
         {
             TextFileCreator txt = new TextFileCreator(); // Создаем новый экземпляр Form2
             txt.Show(); // Открываем Form2 как независимую форму
+
         }
         //TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР
 
@@ -65,7 +70,23 @@ namespace PCHUB
         //EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER 
         private void EXPLORER_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe");
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Title = "Explorer",
+                    Filter = "All|*.*"  // Показывает все файлы, в фильтре просто "All"
+                };
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string sourceFileSysWow64 = openFileDialog.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
         //EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER 
 
@@ -86,15 +107,6 @@ namespace PCHUB
         //CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD 
         private void CMD_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo
-            {
-                FileName = "cmd.exe",
-                UseShellExecute = true,
-                WorkingDirectory = @"C:\",
-                Arguments = "/k color 4 & help",
-            };
-
-            Process.Start(startInfo);
         }
         //CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD 
 
@@ -115,5 +127,67 @@ namespace PCHUB
             this.Close();
         }
         //111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 111CUSTOM CMD!!! 
+
+        private void ExplorerPP_Click(object sender, EventArgs e)
+        {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "ExplorerPP");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "Explorer++.exe");
+
+            Process.Start(customCmdPath);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "Process Hacker 2");
+
+            // Формирование полного пути к Automated Console.exe
+            string customCmdPath = Path.Combine(customCmdDirectory, "ProcessHacker.exe");
+
+            Process.Start(customCmdPath);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Получение пути к директории, где находится исполняемый файл pchub
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string customCmdDirectory = Path.Combine(hubDirectory, "IObit");
+
+            // Укажите относительный путь к папке CUSTOMCMD
+            string IoBit = Path.Combine(customCmdDirectory, "IObit Unlocker");
+
+            // Формирование полного пути к Automated Console.exe
+            string IoBitUnlockerExe = Path.Combine(IoBit, "IObitUnlocker.exe");
+
+            Process.Start(IoBitUnlockerExe);
+        }
+
+        public void LocalUser_Click(object? sender, EventArgs e)
+        {
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MAIN main = new MAIN();
+            main.Show();
+            this.Close();
+        }
+
+        private void TaskMgrControl_Click(object sender, EventArgs e)
+        {
+            TaskMgrControl mgr = new TaskMgrControl();
+            mgr.Show();
+        }
     }
 }

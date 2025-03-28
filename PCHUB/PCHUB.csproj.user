@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\krati\source\repos\PCHUB\PCHUB\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Update="About.cs">
       <SubType>Form</SubType>
@@ -7,19 +10,28 @@
     <Compile Update="AdminApps.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Browse.cs">
+    <Compile Update="HostsFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PowerShellPolicyReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TaskMgrControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="_Browsers\Browse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LocalUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PcHub.cs">
+    <Compile Update="Library.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PowerManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Programs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TaskKiller.cs">
@@ -28,7 +40,7 @@
     <Compile Update="TextFileCreator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="YouTube.cs">
+    <Compile Update="_Browsers\YouTube.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
