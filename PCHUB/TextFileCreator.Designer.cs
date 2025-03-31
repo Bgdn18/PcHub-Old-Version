@@ -199,6 +199,7 @@
             FileExplorer.TabIndex = 24;
             FileExplorer.Text = "File";
             FileExplorer.UseVisualStyleBackColor = true;
+            FileExplorer.Click += FileExplorer_Click;
             // 
             // TextFileCreator
             // 

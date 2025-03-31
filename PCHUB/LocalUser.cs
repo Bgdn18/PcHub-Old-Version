@@ -240,5 +240,25 @@ namespace PCHUB
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnOpenSettings_Click(object sender, EventArgs e)
+        {
+            // URI для вкладки "Family & other users"
+            string settingsUri = "ms-settings:otherusers";
+
+            try
+            {
+                // Запуск процесса
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = settingsUri,
+                    UseShellExecute = true // Обязательно!
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

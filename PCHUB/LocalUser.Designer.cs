@@ -37,15 +37,16 @@
             quitToolStripMenuItem = new ToolStripMenuItem();
             ViewFolder = new Button();
             UserPassword = new TextBox();
+            btnOpenSettings = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // ADDLocalUser
             // 
             ADDLocalUser.Font = new Font("Consolas", 9F);
-            ADDLocalUser.Location = new Point(12, 133);
+            ADDLocalUser.Location = new Point(12, 102);
             ADDLocalUser.Name = "ADDLocalUser";
-            ADDLocalUser.Size = new Size(125, 60);
+            ADDLocalUser.Size = new Size(135, 40);
             ADDLocalUser.TabIndex = 0;
             ADDLocalUser.Text = "ADD";
             ADDLocalUser.UseVisualStyleBackColor = true;
@@ -54,9 +55,9 @@
             // DeleteLocalUser
             // 
             DeleteLocalUser.Font = new Font("Consolas", 9F);
-            DeleteLocalUser.Location = new Point(143, 133);
+            DeleteLocalUser.Location = new Point(153, 102);
             DeleteLocalUser.Name = "DeleteLocalUser";
-            DeleteLocalUser.Size = new Size(125, 60);
+            DeleteLocalUser.Size = new Size(135, 40);
             DeleteLocalUser.TabIndex = 1;
             DeleteLocalUser.Text = "DELETE";
             DeleteLocalUser.UseVisualStyleBackColor = true;
@@ -68,7 +69,7 @@
             textboxUsername.Location = new Point(12, 46);
             textboxUsername.Name = "textboxUsername";
             textboxUsername.PlaceholderText = "UserName";
-            textboxUsername.Size = new Size(452, 22);
+            textboxUsername.Size = new Size(390, 22);
             textboxUsername.TabIndex = 2;
             textboxUsername.Text = "PCHUB USER";
             // 
@@ -78,7 +79,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { aboutToolStripMenuItem, quitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(477, 24);
+            menuStrip1.Size = new Size(481, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -101,9 +102,9 @@
             // ViewFolder
             // 
             ViewFolder.Font = new Font("Consolas", 9F);
-            ViewFolder.Location = new Point(340, 133);
+            ViewFolder.Location = new Point(335, 102);
             ViewFolder.Name = "ViewFolder";
-            ViewFolder.Size = new Size(125, 60);
+            ViewFolder.Size = new Size(135, 40);
             ViewFolder.TabIndex = 4;
             ViewFolder.Text = "View Folder";
             ViewFolder.UseVisualStyleBackColor = true;
@@ -116,14 +117,26 @@
             UserPassword.Name = "UserPassword";
             UserPassword.PasswordChar = '*';
             UserPassword.PlaceholderText = "PassWord";
-            UserPassword.Size = new Size(452, 22);
+            UserPassword.Size = new Size(457, 22);
             UserPassword.TabIndex = 5;
+            // 
+            // btnOpenSettings
+            // 
+            btnOpenSettings.Font = new Font("Consolas", 9F);
+            btnOpenSettings.Location = new Point(408, 46);
+            btnOpenSettings.Name = "btnOpenSettings";
+            btnOpenSettings.Size = new Size(61, 22);
+            btnOpenSettings.TabIndex = 6;
+            btnOpenSettings.Text = "View";
+            btnOpenSettings.UseVisualStyleBackColor = true;
+            btnOpenSettings.Click += btnOpenSettings_Click;
             // 
             // LocalUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(477, 205);
+            ClientSize = new Size(481, 151);
+            Controls.Add(btnOpenSettings);
             Controls.Add(UserPassword);
             Controls.Add(ViewFolder);
             Controls.Add(textboxUsername);
@@ -153,5 +166,6 @@
         private ToolStripMenuItem quitToolStripMenuItem;
         private Button ViewFolder;
         private TextBox UserPassword;
+        private Button btnOpenSettings;
     }
 }

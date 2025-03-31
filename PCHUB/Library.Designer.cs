@@ -29,98 +29,107 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
-            ZAPRET = new Button();
-            CMD = new Button();
-            CONTROLPANEL = new Button();
-            REGEDIT = new Button();
-            TaskMGR = new Button();
+            btnZAPRET = new Button();
+            btnCMD = new Button();
+            btnCONTROLPANEL = new Button();
+            btnREGEDIT = new Button();
+            btnTaskMGR = new Button();
             menuStrip1 = new MenuStrip();
             themeToolStripMenuItem = new ToolStripMenuItem();
             whiteToolStripMenuItem = new ToolStripMenuItem();
             purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             quitToolStripMenuItem = new ToolStripMenuItem();
-            TxtWriter = new Button();
-            Taskkiller = new Button();
-            FileExplorer = new Button();
-            ProccesHacker = new Button();
-            AddLocalUser = new Button();
-            ExplorerPP = new Button();
-            WindowsSettings = new Button();
+            aDDTOSTARTUPToolStripMenuItem = new ToolStripMenuItem();
+            addToolStripMenuItem = new ToolStripMenuItem();
+            deleteToolStripMenuItem = new ToolStripMenuItem();
+            btnTxtWriter = new Button();
+            btnTaskkiller = new Button();
+            btnFileExplorer = new Button();
+            btnProccesHacker = new Button();
+            btnAddLocalUser = new Button();
+            btnExplorerPP = new Button();
+            btnWindowsSettings = new Button();
             buildhelp = new Label();
-            PowerMgr = new Button();
-            TaskMgrControl = new Button();
-            HostsFile = new Button();
-            PowerShellPolicyManager = new Button();
+            btnPowerMgr = new Button();
+            btnTaskMgrControl = new Button();
+            btnHostsFile = new Button();
+            btnPowerShellPolicyManager = new Button();
+            label1 = new Label();
+            btnIObitUnlocker = new Button();
+            label2 = new Label();
+            btnTools = new Button();
+            btnMain = new Button();
+            btnLibrary = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // ZAPRET
+            // btnZAPRET
             // 
-            ZAPRET.Cursor = Cursors.Hand;
-            ZAPRET.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ZAPRET.Location = new Point(576, 368);
-            ZAPRET.Name = "ZAPRET";
-            ZAPRET.Size = new Size(100, 70);
-            ZAPRET.TabIndex = 0;
-            ZAPRET.Text = "ZAPRET for Russia";
-            ZAPRET.UseVisualStyleBackColor = true;
-            ZAPRET.Click += ZAPRET_Click;
+            btnZAPRET.Cursor = Cursors.Hand;
+            btnZAPRET.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnZAPRET.Location = new Point(143, 172);
+            btnZAPRET.Name = "btnZAPRET";
+            btnZAPRET.Size = new Size(124, 35);
+            btnZAPRET.TabIndex = 0;
+            btnZAPRET.Text = "ZAPRET for Russia";
+            btnZAPRET.UseVisualStyleBackColor = true;
+            btnZAPRET.Click += ZAPRET_Click;
             // 
-            // CMD
+            // btnCMD
             // 
-            CMD.Cursor = Cursors.Hand;
-            CMD.Font = new Font("Consolas", 9F);
-            CMD.Location = new Point(548, 85);
-            CMD.Name = "CMD";
-            CMD.Size = new Size(128, 50);
-            CMD.TabIndex = 2;
-            CMD.Text = "CMD ";
-            CMD.UseVisualStyleBackColor = true;
-            CMD.Click += CMD_Click;
+            btnCMD.Cursor = Cursors.Hand;
+            btnCMD.Font = new Font("Consolas", 8.25F);
+            btnCMD.Location = new Point(537, 90);
+            btnCMD.Name = "btnCMD";
+            btnCMD.Size = new Size(125, 35);
+            btnCMD.TabIndex = 2;
+            btnCMD.Text = "CMD ";
+            btnCMD.UseVisualStyleBackColor = true;
+            btnCMD.Click += CMD_Click;
             // 
-            // CONTROLPANEL
+            // btnCONTROLPANEL
             // 
-            CONTROLPANEL.Cursor = Cursors.Hand;
-            CONTROLPANEL.Font = new Font("Consolas", 9F);
-            CONTROLPANEL.Location = new Point(414, 85);
-            CONTROLPANEL.Name = "CONTROLPANEL";
-            CONTROLPANEL.Size = new Size(128, 50);
-            CONTROLPANEL.TabIndex = 4;
-            CONTROLPANEL.Text = "Control Panel 🛂";
-            CONTROLPANEL.UseVisualStyleBackColor = true;
-            CONTROLPANEL.Click += CONTROLPANEL_Click;
+            btnCONTROLPANEL.Cursor = Cursors.Hand;
+            btnCONTROLPANEL.Font = new Font("Consolas", 8.25F);
+            btnCONTROLPANEL.Location = new Point(405, 90);
+            btnCONTROLPANEL.Name = "btnCONTROLPANEL";
+            btnCONTROLPANEL.Size = new Size(125, 35);
+            btnCONTROLPANEL.TabIndex = 4;
+            btnCONTROLPANEL.Text = "Control Panel 🛂";
+            btnCONTROLPANEL.UseVisualStyleBackColor = true;
+            btnCONTROLPANEL.Click += CONTROLPANEL_Click;
             // 
-            // REGEDIT
+            // btnREGEDIT
             // 
-            REGEDIT.Cursor = Cursors.Hand;
-            REGEDIT.Font = new Font("Consolas", 9F);
-            REGEDIT.Location = new Point(280, 85);
-            REGEDIT.Name = "REGEDIT";
-            REGEDIT.Size = new Size(128, 50);
-            REGEDIT.TabIndex = 5;
-            REGEDIT.Text = "REGEDIT ®";
-            REGEDIT.UseVisualStyleBackColor = true;
-            REGEDIT.Click += REGEDIT_Click;
+            btnREGEDIT.Cursor = Cursors.Hand;
+            btnREGEDIT.Font = new Font("Consolas", 8.25F);
+            btnREGEDIT.Location = new Point(274, 90);
+            btnREGEDIT.Name = "btnREGEDIT";
+            btnREGEDIT.Size = new Size(125, 35);
+            btnREGEDIT.TabIndex = 5;
+            btnREGEDIT.Text = "REGEDIT ®";
+            btnREGEDIT.UseVisualStyleBackColor = true;
+            btnREGEDIT.Click += REGEDIT_Click;
             // 
-            // TaskMGR
+            // btnTaskMGR
             // 
-            TaskMGR.Cursor = Cursors.Hand;
-            TaskMGR.Font = new Font("Consolas", 9F);
-            TaskMGR.Location = new Point(146, 85);
-            TaskMGR.Name = "TaskMGR";
-            TaskMGR.Size = new Size(128, 50);
-            TaskMGR.TabIndex = 6;
-            TaskMGR.Text = "Task Manager 💻";
-            TaskMGR.UseVisualStyleBackColor = true;
-            TaskMGR.Click += RESOURCEMONITOR_Click;
+            btnTaskMGR.Cursor = Cursors.Hand;
+            btnTaskMGR.Font = new Font("Consolas", 8.25F);
+            btnTaskMGR.Location = new Point(143, 90);
+            btnTaskMGR.Name = "btnTaskMGR";
+            btnTaskMGR.Size = new Size(125, 35);
+            btnTaskMGR.TabIndex = 6;
+            btnTaskMGR.Text = "Task Manager 💻";
+            btnTaskMGR.UseVisualStyleBackColor = true;
+            btnTaskMGR.Click += TaskManager_Click;
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem, aDDTOSTARTUPToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(691, 24);
+            menuStrip1.Size = new Size(673, 24);
             menuStrip1.TabIndex = 8;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -155,94 +164,115 @@
             // quitToolStripMenuItem
             // 
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            quitToolStripMenuItem.Size = new Size(57, 20);
-            quitToolStripMenuItem.Text = "To Hub";
+            quitToolStripMenuItem.Size = new Size(42, 20);
+            quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
-            // TxtWriter
+            // aDDTOSTARTUPToolStripMenuItem
             // 
-            TxtWriter.Cursor = Cursors.Hand;
-            TxtWriter.Font = new Font("Consolas", 9F);
-            TxtWriter.Location = new Point(12, 85);
-            TxtWriter.Name = "TxtWriter";
-            TxtWriter.Size = new Size(128, 50);
-            TxtWriter.TabIndex = 10;
-            TxtWriter.Text = "Writer ✒";
-            TxtWriter.UseVisualStyleBackColor = true;
-            TxtWriter.Click += TxtWriter_Click;
+            aDDTOSTARTUPToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addToolStripMenuItem, deleteToolStripMenuItem });
+            aDDTOSTARTUPToolStripMenuItem.Name = "aDDTOSTARTUPToolStripMenuItem";
+            aDDTOSTARTUPToolStripMenuItem.Size = new Size(95, 20);
+            aDDTOSTARTUPToolStripMenuItem.Text = "Add to startup";
             // 
-            // Taskkiller
+            // addToolStripMenuItem
             // 
-            Taskkiller.Cursor = Cursors.Hand;
-            Taskkiller.Font = new Font("Consolas", 9F);
-            Taskkiller.Location = new Point(414, 29);
-            Taskkiller.Margin = new Padding(4, 3, 4, 3);
-            Taskkiller.Name = "Taskkiller";
-            Taskkiller.Size = new Size(128, 50);
-            Taskkiller.TabIndex = 18;
-            Taskkiller.Text = "TaskKill 🔪";
-            Taskkiller.UseVisualStyleBackColor = true;
-            Taskkiller.Click += Taskkiller_Click;
+            addToolStripMenuItem.Name = "addToolStripMenuItem";
+            addToolStripMenuItem.Size = new Size(107, 22);
+            addToolStripMenuItem.Text = "Add";
+            addToolStripMenuItem.Click += addToolStripMenuItem_Click;
             // 
-            // FileExplorer
+            // deleteToolStripMenuItem
             // 
-            FileExplorer.Font = new Font("Consolas", 9F);
-            FileExplorer.Location = new Point(548, 29);
-            FileExplorer.Name = "FileExplorer";
-            FileExplorer.Size = new Size(128, 50);
-            FileExplorer.TabIndex = 23;
-            FileExplorer.Text = "File Explorer";
-            FileExplorer.UseVisualStyleBackColor = true;
-            FileExplorer.Click += FileExplorer_Click;
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(107, 22);
+            deleteToolStripMenuItem.Text = "Delete";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
-            // ProccesHacker
+            // btnTxtWriter
             // 
-            ProccesHacker.Cursor = Cursors.Hand;
-            ProccesHacker.Font = new Font("Consolas", 9F);
-            ProccesHacker.Location = new Point(280, 29);
-            ProccesHacker.Name = "ProccesHacker";
-            ProccesHacker.Size = new Size(128, 50);
-            ProccesHacker.TabIndex = 30;
-            ProccesHacker.Text = "Procces Hacker 💀";
-            ProccesHacker.UseVisualStyleBackColor = true;
-            ProccesHacker.Click += button1_Click;
+            btnTxtWriter.Cursor = Cursors.Hand;
+            btnTxtWriter.Font = new Font("Consolas", 8.25F);
+            btnTxtWriter.Location = new Point(12, 90);
+            btnTxtWriter.Name = "btnTxtWriter";
+            btnTxtWriter.Size = new Size(125, 35);
+            btnTxtWriter.TabIndex = 10;
+            btnTxtWriter.Text = "Writer ✒";
+            btnTxtWriter.UseVisualStyleBackColor = true;
+            btnTxtWriter.Click += TxtWriter_Click;
             // 
-            // AddLocalUser
+            // btnTaskkiller
             // 
-            AddLocalUser.Cursor = Cursors.Hand;
-            AddLocalUser.Font = new Font("Consolas", 9F);
-            AddLocalUser.Location = new Point(12, 29);
-            AddLocalUser.Name = "AddLocalUser";
-            AddLocalUser.Size = new Size(128, 50);
-            AddLocalUser.TabIndex = 32;
-            AddLocalUser.Text = "Add Local User 👥";
-            AddLocalUser.UseVisualStyleBackColor = true;
-            AddLocalUser.Click += LocalUser_Click;
+            btnTaskkiller.Cursor = Cursors.Hand;
+            btnTaskkiller.Font = new Font("Consolas", 8.25F);
+            btnTaskkiller.Location = new Point(405, 49);
+            btnTaskkiller.Margin = new Padding(4, 3, 4, 3);
+            btnTaskkiller.Name = "btnTaskkiller";
+            btnTaskkiller.Size = new Size(125, 35);
+            btnTaskkiller.TabIndex = 18;
+            btnTaskkiller.Text = "TaskKill 🔪";
+            btnTaskkiller.UseVisualStyleBackColor = true;
+            btnTaskkiller.Click += Taskkiller_Click;
             // 
-            // ExplorerPP
+            // btnFileExplorer
             // 
-            ExplorerPP.Cursor = Cursors.Hand;
-            ExplorerPP.Font = new Font("Consolas", 9F);
-            ExplorerPP.Location = new Point(146, 29);
-            ExplorerPP.Name = "ExplorerPP";
-            ExplorerPP.Size = new Size(128, 50);
-            ExplorerPP.TabIndex = 34;
-            ExplorerPP.Text = "Explorer++";
-            ExplorerPP.UseVisualStyleBackColor = true;
-            ExplorerPP.Click += ExplorerPP_Click;
+            btnFileExplorer.Font = new Font("Consolas", 8.25F);
+            btnFileExplorer.Location = new Point(537, 49);
+            btnFileExplorer.Name = "btnFileExplorer";
+            btnFileExplorer.Size = new Size(125, 35);
+            btnFileExplorer.TabIndex = 23;
+            btnFileExplorer.Text = "File Explorer";
+            btnFileExplorer.UseVisualStyleBackColor = true;
+            btnFileExplorer.Click += FileExplorer_Click;
             // 
-            // WindowsSettings
+            // btnProccesHacker
             // 
-            WindowsSettings.Cursor = Cursors.Hand;
-            WindowsSettings.Font = new Font("Consolas", 9F);
-            WindowsSettings.Location = new Point(12, 141);
-            WindowsSettings.Margin = new Padding(4, 3, 4, 3);
-            WindowsSettings.Name = "WindowsSettings";
-            WindowsSettings.Size = new Size(128, 50);
-            WindowsSettings.TabIndex = 35;
-            WindowsSettings.Text = "Windows Settings ⚙";
-            WindowsSettings.UseVisualStyleBackColor = true;
-            WindowsSettings.Click += WindowsSettings_Click;
+            btnProccesHacker.Cursor = Cursors.Hand;
+            btnProccesHacker.Font = new Font("Consolas", 8.25F);
+            btnProccesHacker.Location = new Point(274, 49);
+            btnProccesHacker.Name = "btnProccesHacker";
+            btnProccesHacker.Size = new Size(125, 35);
+            btnProccesHacker.TabIndex = 30;
+            btnProccesHacker.Text = "Procces Hacker 💀";
+            btnProccesHacker.UseVisualStyleBackColor = true;
+            btnProccesHacker.Click += btnProccesHacker_Click;
+            // 
+            // btnAddLocalUser
+            // 
+            btnAddLocalUser.Cursor = Cursors.Hand;
+            btnAddLocalUser.Font = new Font("Consolas", 8.25F);
+            btnAddLocalUser.Location = new Point(12, 49);
+            btnAddLocalUser.Name = "btnAddLocalUser";
+            btnAddLocalUser.Size = new Size(125, 35);
+            btnAddLocalUser.TabIndex = 32;
+            btnAddLocalUser.Text = "Add Local User 👥";
+            btnAddLocalUser.UseVisualStyleBackColor = true;
+            btnAddLocalUser.Click += btnLocalUser_Click;
+            // 
+            // btnExplorerPP
+            // 
+            btnExplorerPP.Cursor = Cursors.Hand;
+            btnExplorerPP.Font = new Font("Consolas", 8.25F);
+            btnExplorerPP.Location = new Point(143, 49);
+            btnExplorerPP.Name = "btnExplorerPP";
+            btnExplorerPP.Size = new Size(125, 35);
+            btnExplorerPP.TabIndex = 34;
+            btnExplorerPP.Text = "Explorer++";
+            btnExplorerPP.UseVisualStyleBackColor = true;
+            btnExplorerPP.Click += btnExplorerPP_Click;
+            // 
+            // btnWindowsSettings
+            // 
+            btnWindowsSettings.Cursor = Cursors.Hand;
+            btnWindowsSettings.Font = new Font("Consolas", 8.25F);
+            btnWindowsSettings.Location = new Point(12, 131);
+            btnWindowsSettings.Margin = new Padding(4, 3, 4, 3);
+            btnWindowsSettings.Name = "btnWindowsSettings";
+            btnWindowsSettings.Size = new Size(125, 35);
+            btnWindowsSettings.TabIndex = 35;
+            btnWindowsSettings.Text = "Windows Settings ⚙";
+            btnWindowsSettings.UseVisualStyleBackColor = true;
+            btnWindowsSettings.Click += btnWindowsSettings_Click;
             // 
             // buildhelp
             // 
@@ -256,84 +286,162 @@
             buildhelp.Name = "buildhelp";
             buildhelp.Size = new Size(126, 20);
             buildhelp.TabIndex = 36;
-            buildhelp.Text = "BUILD: 3/26/2025";
-            buildhelp.Click += buildhelp_Click;
+            buildhelp.Text = "BUILD: 3/29/2025";
+            buildhelp.Click += btnbuildhelp_Click;
             // 
-            // PowerMgr
+            // btnPowerMgr
             // 
-            PowerMgr.Cursor = Cursors.Hand;
-            PowerMgr.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PowerMgr.Location = new Point(146, 141);
-            PowerMgr.Margin = new Padding(4, 3, 4, 3);
-            PowerMgr.Name = "PowerMgr";
-            PowerMgr.Size = new Size(128, 50);
-            PowerMgr.TabIndex = 37;
-            PowerMgr.Text = "Power \r\nmanagement ⚡";
-            PowerMgr.UseVisualStyleBackColor = true;
-            PowerMgr.Click += PowerMgr_Click;
+            btnPowerMgr.Cursor = Cursors.Hand;
+            btnPowerMgr.Font = new Font("Consolas", 8.25F);
+            btnPowerMgr.Location = new Point(143, 131);
+            btnPowerMgr.Margin = new Padding(4, 3, 4, 3);
+            btnPowerMgr.Name = "btnPowerMgr";
+            btnPowerMgr.Size = new Size(125, 35);
+            btnPowerMgr.TabIndex = 37;
+            btnPowerMgr.Text = "Power \r\nmanagement ⚡";
+            btnPowerMgr.UseVisualStyleBackColor = true;
+            btnPowerMgr.Click += btnPowerMgr_Click;
             // 
-            // TaskMgrControl
+            // btnTaskMgrControl
             // 
-            TaskMgrControl.Cursor = Cursors.Hand;
-            TaskMgrControl.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TaskMgrControl.Location = new Point(280, 141);
-            TaskMgrControl.Margin = new Padding(4, 3, 4, 3);
-            TaskMgrControl.Name = "TaskMgrControl";
-            TaskMgrControl.Size = new Size(128, 50);
-            TaskMgrControl.TabIndex = 38;
-            TaskMgrControl.Text = "TaskMgr Control";
-            TaskMgrControl.UseVisualStyleBackColor = true;
-            TaskMgrControl.Click += TaskMgrControl_Click;
+            btnTaskMgrControl.Cursor = Cursors.Hand;
+            btnTaskMgrControl.Font = new Font("Consolas", 8.25F);
+            btnTaskMgrControl.Location = new Point(274, 131);
+            btnTaskMgrControl.Margin = new Padding(4, 3, 4, 3);
+            btnTaskMgrControl.Name = "btnTaskMgrControl";
+            btnTaskMgrControl.Size = new Size(125, 35);
+            btnTaskMgrControl.TabIndex = 38;
+            btnTaskMgrControl.Text = "TaskMgr Control";
+            btnTaskMgrControl.UseVisualStyleBackColor = true;
+            btnTaskMgrControl.Click += btnTaskMgrUnlocker_Click;
             // 
-            // HostsFile
+            // btnHostsFile
             // 
-            HostsFile.Cursor = Cursors.Hand;
-            HostsFile.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            HostsFile.Location = new Point(416, 141);
-            HostsFile.Margin = new Padding(4, 3, 4, 3);
-            HostsFile.Name = "HostsFile";
-            HostsFile.Size = new Size(128, 50);
-            HostsFile.TabIndex = 39;
-            HostsFile.Text = "HostsFile";
-            HostsFile.UseVisualStyleBackColor = true;
-            HostsFile.Click += HostsFile_Click;
+            btnHostsFile.Cursor = Cursors.Hand;
+            btnHostsFile.Font = new Font("Consolas", 8.25F);
+            btnHostsFile.Location = new Point(405, 131);
+            btnHostsFile.Margin = new Padding(4, 3, 4, 3);
+            btnHostsFile.Name = "btnHostsFile";
+            btnHostsFile.Size = new Size(125, 35);
+            btnHostsFile.TabIndex = 39;
+            btnHostsFile.Text = "HostsFile";
+            btnHostsFile.UseVisualStyleBackColor = true;
+            btnHostsFile.Click += btnHostsFile_Click;
             // 
-            // PowerShellPolicyManager
+            // btnPowerShellPolicyManager
             // 
-            PowerShellPolicyManager.Cursor = Cursors.Hand;
-            PowerShellPolicyManager.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PowerShellPolicyManager.Location = new Point(548, 141);
-            PowerShellPolicyManager.Margin = new Padding(4, 3, 4, 3);
-            PowerShellPolicyManager.Name = "PowerShellPolicyManager";
-            PowerShellPolicyManager.Size = new Size(128, 50);
-            PowerShellPolicyManager.TabIndex = 40;
-            PowerShellPolicyManager.Text = "PowerShell Policy Manager";
-            PowerShellPolicyManager.UseVisualStyleBackColor = true;
-            PowerShellPolicyManager.Click += PowerShellPolicyManager_Click;
+            btnPowerShellPolicyManager.Cursor = Cursors.Hand;
+            btnPowerShellPolicyManager.Font = new Font("Consolas", 8.25F);
+            btnPowerShellPolicyManager.Location = new Point(537, 131);
+            btnPowerShellPolicyManager.Margin = new Padding(4, 3, 4, 3);
+            btnPowerShellPolicyManager.Name = "btnPowerShellPolicyManager";
+            btnPowerShellPolicyManager.Size = new Size(125, 35);
+            btnPowerShellPolicyManager.TabIndex = 40;
+            btnPowerShellPolicyManager.Text = "PowerShell Policy Manager";
+            btnPowerShellPolicyManager.UseVisualStyleBackColor = true;
+            btnPowerShellPolicyManager.Click += btnPowerShellPolicyManager_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 22);
+            label1.TabIndex = 41;
+            label1.Text = "Library:";
+            // 
+            // btnIObitUnlocker
+            // 
+            btnIObitUnlocker.Cursor = Cursors.Hand;
+            btnIObitUnlocker.Font = new Font("Consolas", 8.25F);
+            btnIObitUnlocker.Location = new Point(12, 172);
+            btnIObitUnlocker.Margin = new Padding(4, 3, 4, 3);
+            btnIObitUnlocker.Name = "btnIObitUnlocker";
+            btnIObitUnlocker.Size = new Size(125, 35);
+            btnIObitUnlocker.TabIndex = 42;
+            btnIObitUnlocker.Text = "IObit Unlocker 🗝";
+            btnIObitUnlocker.UseVisualStyleBackColor = true;
+            btnIObitUnlocker.Click += btnIObitUnlocker_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 342);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 22);
+            label2.TabIndex = 43;
+            label2.Text = "Hubs:";
+            // 
+            // btnTools
+            // 
+            btnTools.Cursor = Cursors.Hand;
+            btnTools.Font = new Font("Consolas", 9F);
+            btnTools.Location = new Point(13, 367);
+            btnTools.Margin = new Padding(4, 3, 4, 3);
+            btnTools.Name = "btnTools";
+            btnTools.Size = new Size(124, 35);
+            btnTools.TabIndex = 44;
+            btnTools.Text = "Tools...";
+            btnTools.UseVisualStyleBackColor = true;
+            btnTools.Click += btnTools_Click;
+            // 
+            // btnMain
+            // 
+            btnMain.Cursor = Cursors.Hand;
+            btnMain.Font = new Font("Consolas", 9F);
+            btnMain.Location = new Point(143, 367);
+            btnMain.Margin = new Padding(4, 3, 4, 3);
+            btnMain.Name = "btnMain";
+            btnMain.Size = new Size(124, 35);
+            btnMain.TabIndex = 45;
+            btnMain.Text = "Main...";
+            btnMain.UseVisualStyleBackColor = true;
+            btnMain.Click += btnMain_Click;
+            // 
+            // btnLibrary
+            // 
+            btnLibrary.Cursor = Cursors.Hand;
+            btnLibrary.Font = new Font("Consolas", 9F);
+            btnLibrary.Location = new Point(274, 367);
+            btnLibrary.Margin = new Padding(4, 3, 4, 3);
+            btnLibrary.Name = "btnLibrary";
+            btnLibrary.Size = new Size(124, 35);
+            btnLibrary.TabIndex = 46;
+            btnLibrary.Text = "Library...";
+            btnLibrary.UseVisualStyleBackColor = true;
+            btnLibrary.Click += btnLibrary_Click;
             // 
             // Library
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(691, 450);
-            Controls.Add(PowerShellPolicyManager);
-            Controls.Add(HostsFile);
-            Controls.Add(TaskMgrControl);
-            Controls.Add(PowerMgr);
+            ClientSize = new Size(673, 448);
+            Controls.Add(btnLibrary);
+            Controls.Add(btnMain);
+            Controls.Add(btnTools);
+            Controls.Add(label2);
+            Controls.Add(btnIObitUnlocker);
+            Controls.Add(label1);
+            Controls.Add(btnPowerShellPolicyManager);
+            Controls.Add(btnHostsFile);
+            Controls.Add(btnTaskMgrControl);
+            Controls.Add(btnPowerMgr);
             Controls.Add(buildhelp);
-            Controls.Add(WindowsSettings);
-            Controls.Add(ExplorerPP);
-            Controls.Add(AddLocalUser);
-            Controls.Add(ProccesHacker);
-            Controls.Add(FileExplorer);
-            Controls.Add(Taskkiller);
-            Controls.Add(TxtWriter);
-            Controls.Add(TaskMGR);
-            Controls.Add(REGEDIT);
-            Controls.Add(CONTROLPANEL);
-            Controls.Add(CMD);
-            Controls.Add(ZAPRET);
+            Controls.Add(btnWindowsSettings);
+            Controls.Add(btnExplorerPP);
+            Controls.Add(btnAddLocalUser);
+            Controls.Add(btnProccesHacker);
+            Controls.Add(btnFileExplorer);
+            Controls.Add(btnTaskkiller);
+            Controls.Add(btnTxtWriter);
+            Controls.Add(btnTaskMGR);
+            Controls.Add(btnREGEDIT);
+            Controls.Add(btnCONTROLPANEL);
+            Controls.Add(btnCMD);
+            Controls.Add(btnZAPRET);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
@@ -342,7 +450,6 @@
             Name = "Library";
             ShowIcon = false;
             Text = "Library";
-            Load += PcHub_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -351,28 +458,37 @@
 
         #endregion
 
-        private Button ZAPRET;
-        private Button CMD;
-        private Button CONTROLPANEL;
-        private Button REGEDIT;
-        private Button TaskMGR;
+        private Button btnZAPRET;
+        private Button btnCMD;
+        private Button btnCONTROLPANEL;
+        private Button btnREGEDIT;
+        private Button btnTaskMGR;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem themeToolStripMenuItem;
         private ToolStripMenuItem whiteToolStripMenuItem;
         private ToolStripMenuItem purpleToolStripMenuItem;
-        private Button TxtWriter;
-        private Button Taskkiller;
-        private Button FileExplorer;
-        private Button ProccesHacker;
-        private Button AddLocalUser;
-        private Button ExplorerPP;
-        private Button WindowsSettings;
+        private Button btnTxtWriter;
+        private Button btnTaskkiller;
+        private Button btnFileExplorer;
+        private Button btnProccesHacker;
+        private Button btnAddLocalUser;
+        private Button btnExplorerPP;
+        private Button btnWindowsSettings;
         private Label buildhelp;
-        private Button PowerMgr;
+        private Button btnPowerMgr;
         private ToolStripMenuItem quitToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
-        private Button TaskMgrControl;
-        private Button HostsFile;
-        private Button PowerShellPolicyManager;
+        private Button btnTaskMgrControl;
+        private Button btnHostsFile;
+        private Button btnPowerShellPolicyManager;
+        private Label label1;
+        private Button btnIObitUnlocker;
+        private ToolStripMenuItem aDDTOSTARTUPToolStripMenuItem;
+        private ToolStripMenuItem addToolStripMenuItem;
+        private ToolStripMenuItem deleteToolStripMenuItem;
+        private Label label2;
+        private Button btnTools;
+        private Button btnMain;
+        private Button btnLibrary;
     }
 }

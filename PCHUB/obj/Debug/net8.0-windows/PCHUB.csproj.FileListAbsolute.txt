@@ -3,7 +3,6 @@ C:\Users\krati\source\repos\PCHUB\PCHUB\bin\Debug\net8.0-windows\PCHUB.deps.json
 C:\Users\krati\source\repos\PCHUB\PCHUB\bin\Debug\net8.0-windows\PCHUB.runtimeconfig.json
 C:\Users\krati\source\repos\PCHUB\PCHUB\bin\Debug\net8.0-windows\PCHUB.dll
 C:\Users\krati\source\repos\PCHUB\PCHUB\bin\Debug\net8.0-windows\PCHUB.pdb
-C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.PcHub.resources
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.Properties.Resources.resources
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.csproj.GenerateResource.cache
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.GeneratedMSBuildEditorConfig.editorconfig
@@ -16,3 +15,16 @@ C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.pdb
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.genruntimeconfig.cache
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\ref\PCHUB.dll
 C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.About.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.AdminApps.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.HostsFile.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.Library.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.LocalUser.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.PowerManagement.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.PowerShellPolicyReset.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.TaskKiller.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.TaskMgrControl.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.TextFileCreator.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.Browse.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.YouTube.resources
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB.sourcelink.json
+C:\Users\krati\source\repos\PCHUB\PCHUB\obj\Debug\net8.0-windows\PCHUB._MAIN.resources

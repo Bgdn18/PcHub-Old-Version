@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace PCHUB
 {
@@ -11,150 +12,469 @@ namespace PCHUB
             this.MaximizeBox = false;
         }
 
-        //ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET 
-        private void ZAPRET_Click(object sender, EventArgs e)
+
+        //Название Приложения!!!
+        public class AppnamePcHub
         {
-            // Получение пути к директории, где находится исполняемый файл pchub
+            public const string AppName = "PCHUB";
+        }
+
+
+
+
+        public void ZAPRET_Click(object sender, EventArgs e)
+        {
             string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            // Укажите относительный путь к папке CUSTOMCMD
-            string customCmdDirectory = Path.Combine(hubDirectory, "ZAPRET");
+            string Zapretpath = Path.Combine(hubDirectory, "ZAPRET");
 
-            // Формирование полного пути к Automated Console.exe
-            string customCmdPath = Path.Combine(customCmdDirectory, "ZAPRET.bat");
+            string ZAPRET = Path.Combine(Zapretpath, "ZAPRET.bat");
 
-            Process.Start(customCmdPath);
+            try
+            {
+                Process.Start(ZAPRET);
+            }
+            catch (Exception ex)
+            {
+                {
+                    MessageBox.Show("Error opening Zapret: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
-        //ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET ZAPRET 
 
-        //CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD 
-        public void CMD_Click(object? sender, EventArgs e)
+        private void CMD_Click(object? sender, EventArgs e)
+        {
+            cmd();
+        }
+
+        public void cmd()
         {
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
                 UseShellExecute = true,
                 WorkingDirectory = @"C:\",
-                Arguments = "/k color 4 & help",
+                Arguments = "/k color 3 & help",
             };
-
-            Process.Start(startInfo);
-        }
-        //CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD CMD 
-
-        //EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER 
-        private void EXPLORER_Click(object sender, EventArgs e)
-        {
-            Process.Start("explorer.exe");
-        }
-        //EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER EXPLORER 
-
-        //CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL
-        private void CONTROLPANEL_Click(object sender, EventArgs e)
-        {
-            Process.Start("control.exe");
-        }
-        //CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL CONTROL PANEL
-
-        //REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT 
-        private void REGEDIT_Click(object sender, EventArgs e)
-        {
-            Process.Start("regedit.exe");
-        }
-        //REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT REGEDIT 
-
-        //RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR 
-        private void RESOURCEMONITOR_Click(object sender, EventArgs e)
-        {
-            Process.Start("taskmgr.exe");
-        }
-        //RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR RESOURCE MONITOR 
-
-        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
-        private void qToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        //EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT EXIT 
-
-        //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
-        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.BackColor = Color.White;
-        }
-        //WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE WHITE 
-
-        //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
-        private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.BackColor = Color.RebeccaPurple;
-        }
-        //PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE PURPLE 
-
-        //ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            About about = new About(); // Создаем новый экземпляр Form2
-            about.Show();
-        }
-        //ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU ABOUT MENU 
-
-        //TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР 
-        private void TxtWriter_Click(object sender, EventArgs e)
-        {
-            TextFileCreator txt = new TextFileCreator(); // Создаем новый экземпляр Form2
-            txt.Show(); // Открываем Form2 как независимую форму
-        }
-        //TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР TXT РЕДАКТОР 
-
-        //BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER 
-        private void Google_Click(object sender, EventArgs e)
-        {
-            // URL, который нужно открыть
-            string url = "https://www.google.com";
-
             try
             {
-                // Открытие браузера по умолчанию
-                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                Process.Start(startInfo);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при открытии браузера: " + ex.Message);
+                MessageBox.Show("Error opening cmd: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER BROWSER 
-        private void PcHub_Load(object sender, EventArgs e)
-        {
 
+        public void EXPLORER_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("explorer.exe");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening Explorer.exe maybe it is blocked, try to unblock it in the TaskManagerControl tab: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void toHubToolStripMenuItem_Click(object sender, EventArgs e)
+        public void CONTROLPANEL_Click(object sender, EventArgs e)
         {
-            MAIN ToHub = new MAIN(); // Создаем новый экземпляр Form2
-            ToHub.Show(); // Открываем Form2 как независимую форму
+            try
+            {
+                Process.Start("control.exe");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening ControlPanel: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void Browse_Click(object sender, EventArgs e)
+        public void REGEDIT_Click(object sender, EventArgs e)
         {
-            Browse browser = new Browse(); // Создаем новый экземпляр Form2
-            browser.Show(); // Открываем Form2 как независимую форму
+            try
+            {
+                Process.Start("regedit.exe");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening RegEdit: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void TaskManager_Click(object sender, EventArgs e)
+        {
+            taskmgr();
+        }
+
+
+        public void whiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
+
+        public void purpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.RebeccaPurple;
+        }
+
+        public void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            build();
+        }
+
+        private void TxtWriter_Click(object sender, EventArgs e)
+        {
+            writer();
+        }
+
+        public void Browse_Click(object sender, EventArgs e)
+        {
+            browser();
         }
 
         private void Taskkiller_Click(object sender, EventArgs e)
         {
-            TaskKiller killer = new TaskKiller(); // Создаем новый экземпляр Form2
-            killer.Show(); // Открываем Form2 как независимую форму
+            taskkill();
         }
 
-        public void FileExplorer_Click(object? sender, EventArgs e)
+        private void FileExplorer_Click(object? sender, EventArgs e)
+        {
+            fileexplorer();
+        }
+
+        private void btnProccesHacker_Click(object sender, EventArgs e)
+        {
+            procceshacker();
+        }
+
+        private void btnLocalUser_Click(object? sender, EventArgs e)
+        {
+            localuser();
+        }
+
+        private void btnExplorerPP_Click(object? sender, EventArgs e)
+        {
+            explorerpp(); //explorer++
+        }
+
+        private void btnWindowsSettings_Click(object? sender, EventArgs e)
+        {
+            settings();
+        }
+
+        private void btnbuildhelp_Click(object sender, EventArgs e)
+        {
+            build();
+        }
+
+        public void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            quit();
+        }
+
+        private void btnPowerMgr_Click(object? sender, EventArgs e)
+        {
+            powermgr();
+        }
+
+        public void btnTaskMgrUnlocker_Click(object sender, EventArgs e)
+        {
+            taskmgrunlocker();
+        }
+
+        public void btnHostsFile_Click(object sender, EventArgs e)
+        {
+            HostsFile();
+        }
+
+        public void btnPowerShellPolicyManager_Click(object sender, EventArgs e)
+        {
+            powershellpolicymgr();
+        }
+
+        private void btnIObitUnlocker_Click(object? sender, EventArgs e)
+        {
+            unlocker();
+        }
+
+        public void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addtostartup();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            removefromstartup();
+        }
+
+        private void btnMain_Click(object sender, EventArgs e)
+        {
+            main();
+        }
+
+        private void btnTools_Click(object sender, EventArgs e)
+        {
+            tools();
+        }
+
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            library();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public void tools()
+        {
+            AdminApps adminapps = new AdminApps();
+            try
+            {
+                adminapps.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void library()
+        {
+            Library library = new Library();
+            try
+            {
+                library.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void main() // Открывает Форму MAIN (Начальную)
+        {
+            _MAIN main = new _MAIN();
+            try
+            {
+                main.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void removefromstartup() // Удаление Из Автозагрузки
+        {
+            try
+            {
+                using (RegistryKey? key = Registry.CurrentUser.OpenSubKey(
+                    @"Software\Microsoft\Windows\CurrentVersion\Run", true))
+                {
+                    if (key?.GetValue(AppnamePcHub.AppName) == null)
+                    {
+                        MessageBox.Show("The program was not in startup", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    key.DeleteValue(AppnamePcHub.AppName);
+                    MessageBox.Show("The program has been removed from startup", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void addtostartup() // Добавляет В Автозагрузку
+        {
+            try
+            {
+                string exePath = Application.ExecutablePath;
+
+                using (RegistryKey? key = Registry.CurrentUser.OpenSubKey(
+                    @"Software\Microsoft\Windows\CurrentVersion\Run", true))
+                {
+                    if (key?.GetValue(AppnamePcHub.AppName) != null)
+                    {
+                        MessageBox.Show("The program is already in startup", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    key?.SetValue(AppnamePcHub.AppName, exePath);
+                    MessageBox.Show("The program has been successfully added to startup", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void unlocker() // Открывает IObit unlocker
+        {
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            string customCmdDirectory = Path.Combine(hubDirectory, "IObit");
+
+            string IoBit = Path.Combine(customCmdDirectory, "IObit Unlocker");
+
+            string IoBitUnlockerExe = Path.Combine(IoBit, "IObitUnlocker.exe");
+            try
+            {
+                Process.Start(IoBitUnlockerExe);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening IObit Unlocker maybe it is missing from the application folder ?" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void powershellpolicymgr() // Открывает Менеджер По Политике PowerShell
+        {
+            PowerShellPolicyReset powershellreset = new PowerShellPolicyReset();
+            try
+            {
+                powershellreset.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening PowerShellReset: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void HostsFile() // Открывает Файл Hosts
+        {
+            HostsFile hostfile = new HostsFile();
+            try
+            {
+                hostfile.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening HostFile: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void taskmgrunlocker() // Открывает Разблокировщик Диспетчера Задач
+        {
+            TaskMgrControl Taskmgr = new TaskMgrControl();
+            try
+            {
+                Taskmgr.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening TaskMgrControl: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void powermgr() // Открывает  Управление Питанием (Не Работает В Среде Ввостановления)
+        {
+            PowerManagement power = new PowerManagement();
+            try
+            {
+                power.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening PowerMgr: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void build() // Открывает Информацию О Билде
+        {
+            About about = new About();
+            try
+            {
+                about.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening About: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void settings() // Открывает Настройки Windows
+        {
+            try
+            {
+                Process.Start("explorer.exe", "ms-settings:");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening settings: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void explorerpp() // Открывает Проводник++
+        {
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            string customCmdDirectory = Path.Combine(hubDirectory, "ExplorerPP");
+
+            string customCmdPath = Path.Combine(customCmdDirectory, "Explorer++.exe");
+
+            try
+            {
+                Process.Start(customCmdPath);
+            }
+            catch
+            {
+                MessageBox.Show("Error opening Explorer++ maybe it is missing from the application folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void localuser() // Открывает Добавление Локального Пользователя
+        {
+            LocalUser Localusercreate = new LocalUser();
+            try
+            {
+                Localusercreate.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening LocalUserCreate" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void procceshacker() // Открывает Проццес Хакер
+        {
+            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            string procceshackerfolder = Path.Combine(hubDirectory, "Process Hacker 2");
+
+            string ProccesHacker = Path.Combine(procceshackerfolder, "ProcessHacker.exe");
+
+            try
+            {
+                Process.Start(ProccesHacker);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening IObit Unlocker maybe it is missing from the application folder ?" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void fileexplorer() // Открывает Проводник Который Может Быть Полезен В Среде Ввостановления
         {
             try
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog
                 {
                     Title = "Explorer",
-                    Filter = "All|*.*"  // Показывает все файлы, в фильтре просто "All"
+                    Filter = "All|*.*"
                 };
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -164,94 +484,71 @@ namespace PCHUB
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void taskkill() // Открывает Снятие Задач
         {
-            // Получение пути к директории, где находится исполняемый файл pchub
-            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            // Укажите относительный путь к папке CUSTOMCMD
-            string customCmdDirectory = Path.Combine(hubDirectory, "Process Hacker 2");
-
-            // Формирование полного пути к Automated Console.exe
-            string customCmdPath = Path.Combine(customCmdDirectory, "ProcessHacker.exe");
-
-            Process.Start(customCmdPath);
-        }
-
-        public void LocalUser_Click(object? sender, EventArgs e)
-        {
-            LocalUser Localusercreate = new LocalUser();
-            Localusercreate.Show();
-        }
-
-        public void ExplorerPP_Click(object? sender, EventArgs e)
-        {
-            // Получение пути к директории, где находится исполняемый файл pchub
-            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
-            // Укажите относительный путь к папке CUSTOMCMD
-            string customCmdDirectory = Path.Combine(hubDirectory, "ExplorerPP");
-
-            // Формирование полного пути к Automated Console.exe
-            string customCmdPath = Path.Combine(customCmdDirectory, "Explorer++.exe");
-
-            Process.Start(customCmdPath);
-        }
-
-        public void WindowsSettings_Click(object? sender, EventArgs e)
-        {
-            //Settings Settings Settings Settings Settings Settings Settings Settings Settings Settings Settings 
+            TaskKiller killer = new TaskKiller();
             try
             {
-                Process.Start("explorer.exe", "ms-settings:");
+                killer.Show();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error opening settings: " + ex.Message);
+                MessageBox.Show($"error opening TaskKiller: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //Settings Settings Settings Settings Settings Settings Settings Settings Settings Settings Settings 
         }
 
-        private void buildhelp_Click(object sender, EventArgs e)
+        public void browser() // Открывает Искатель По Браузеру
         {
-            About about = new About();
-            about.Show();
+            Browse browser = new Browse();
+            try
+            {
+                browser.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening Browser: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-
-        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        public void writer() // Открывает Писатель
         {
-            MAIN main = new MAIN();
-            main.Show();
-            this.Close();
+            TextFileCreator txt = new TextFileCreator();
+            try
+            {
+                txt.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"error opening Writer: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        public void PowerMgr_Click(object? sender, EventArgs e)
+        public void taskmgr() // Диспетчер Задач
         {
-            PowerManagement power = new PowerManagement();
-            power.Show();
+            try
+            {
+                Process.Start("taskmgr.exe");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening task manager: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void TaskMgrControl_Click(object sender, EventArgs e)
+        public void quit() // Выход Из Приложения
         {
-            TaskMgrControl Taskmgr = new TaskMgrControl();
-            Taskmgr.Show();
-        }
-
-        private void HostsFile_Click(object sender, EventArgs e)
-        {
-            HostsFile hostfile = new HostsFile();
-            hostfile.Show();
-        }
-
-        private void PowerShellPolicyManager_Click(object sender, EventArgs e)
-        {
-            PowerShellPolicyReset powershellreset = new PowerShellPolicyReset();
-            powershellreset.Show();
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Quit: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

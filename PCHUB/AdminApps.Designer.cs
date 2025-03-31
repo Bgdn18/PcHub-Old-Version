@@ -199,7 +199,7 @@
             IoBitUnlocker.TabIndex = 25;
             IoBitUnlocker.Text = "Unlocker";
             IoBitUnlocker.UseVisualStyleBackColor = true;
-            IoBitUnlocker.Click += button2_Click;
+            IoBitUnlocker.Click += IObitUnlocker_Click;
             // 
             // AddLocalUser
             // 
@@ -222,7 +222,7 @@
             TaskMgrControl.TabIndex = 27;
             TaskMgrControl.Text = "Task Manager Control";
             TaskMgrControl.UseVisualStyleBackColor = true;
-            TaskMgrControl.Click += TaskMgrControl_Click;
+            TaskMgrControl.Click += TaskMgrUnlocker_Click;
             // 
             // AdminApps
             // 
@@ -248,7 +248,6 @@
             Name = "AdminApps";
             ShowIcon = false;
             Text = "Tools";
-            Load += AdminApps_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

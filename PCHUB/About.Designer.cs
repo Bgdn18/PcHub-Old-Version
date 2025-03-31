@@ -67,9 +67,9 @@
             build.ForeColor = Color.White;
             build.Location = new Point(459, 182);
             build.Name = "build";
-            build.Size = new Size(117, 20);
+            build.Size = new Size(126, 20);
             build.TabIndex = 2;
-            build.Text = "BUILD: 3/5/2025";
+            build.Text = "BUILD: 3/29/2025";
             // 
             // label2
             // 

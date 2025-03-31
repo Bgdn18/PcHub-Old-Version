@@ -51,6 +51,7 @@
             txtHosts.Location = new Point(12, 12);
             txtHosts.Multiline = true;
             txtHosts.Name = "txtHosts";
+            txtHosts.ScrollBars = ScrollBars.Both;
             txtHosts.Size = new Size(782, 397);
             txtHosts.TabIndex = 1;
             // 

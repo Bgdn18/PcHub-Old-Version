@@ -10,11 +10,18 @@ namespace PCHUB
         {
             InitializeComponent();
             CheckCurrentPolicy();
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
+            ConfigureForm();
         }
 
-        // Проверка текущей политики выполнения через CMD
+        private void ConfigureForm()
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Text = "PowerShell Policy Manager";
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        // Проверка текущей политики
         private void CheckCurrentPolicy()
         {
             try
@@ -22,40 +29,37 @@ namespace PCHUB
                 var process = new Process
                 {
                     StartInfo = {
-                        FileName = "cmd.exe",
-                        Arguments = "/c powershell Get-ExecutionPolicy -Scope CurrentUser",
+                        FileName = "powershell.exe",
+                        Arguments = "Get-ExecutionPolicy -Scope CurrentUser",
                         RedirectStandardOutput = true,
                         UseShellExecute = false,
-                        CreateNoWindow = true,
-                        Verb = "runas" // Запуск от администратора
+                        CreateNoWindow = true
                     }
                 };
 
                 process.Start();
-                string output = process.StandardOutput.ReadToEnd();
+                string output = process.StandardOutput.ReadToEnd().Trim();
                 process.WaitForExit();
 
-                lblCurrentPolicy.Text = output.Contains("Unrestricted")
-                    ? "Current policy: Allowed"
-                    : "Current policy: Blocked";
+                lblCurrentPolicy.Text = $"Current Policy (CurrentUser): {output}";
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // Кнопка сброса политики
-        private void btnResetPolicy_Click(object sender, EventArgs e)
+        // Общий метод для изменения политики
+        private void SetPolicy(string policyName, string scope = "CurrentUser")
         {
             try
             {
                 var process = new Process
                 {
                     StartInfo = {
-                        FileName = "cmd.exe",
-                        Arguments = "/c powershell Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force",
-                        Verb = "runas",
+                        FileName = "powershell.exe", // повершелл
+                        Arguments = $"-Command Set-ExecutionPolicy {policyName} -Scope {scope} -Force",
+                        Verb = "runas", //права администратора
                         WindowStyle = ProcessWindowStyle.Hidden
                     }
                 };
@@ -63,19 +67,26 @@ namespace PCHUB
                 process.Start();
                 process.WaitForExit();
                 CheckCurrentPolicy();
-
-                MessageBox.Show("Execution policy reset!", "Success");
+                MessageBox.Show($"Policy changed to {policyName}!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
-        {
+        // Кнопки для разных политик
+        private void btnResetPolicy_Click(object sender, EventArgs e) => SetPolicy("Unrestricted"); //сбрасывает политику
+        private void btnUnrestricted_Click(object sender, EventArgs e) => SetPolicy("Unrestricted"); // Unrestricted
+        private void btnRemoteSigned_Click(object sender, EventArgs e) => SetPolicy("RemoteSigned"); // RemoteSigned
+        private void btnAllSigned_Click(object sender, EventArgs e) => SetPolicy("AllSigned"); // AllSigned
+        private void btnRestricted_Click(object sender, EventArgs e) => SetPolicy("Restricted"); // Restricted
+        private void btnBypass_Click(object sender, EventArgs e) => SetPolicy("Bypass"); // Bypass
+        private void btnUndefined_Click(object sender, EventArgs e) => SetPolicy("Undefined"); // Undefined
 
-        }
+
+
+        // Кнопка проверки текущей политики
+        private void btnCheck_Click(object sender, EventArgs e) => CheckCurrentPolicy();
     }
 }

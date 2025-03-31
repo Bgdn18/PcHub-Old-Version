@@ -33,7 +33,7 @@ namespace PCHUB
 
         private void toHubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MAIN ToHub = new MAIN(); // Создаем новый экземпляр Form2
+            _MAIN ToHub = new _MAIN(); // Создаем новый экземпляр Form2
             ToHub.Show(); // Открываем Form2 как независимую форму
             this.Hide(); // Скрываем текущую форму (Form1), а не закрываем её
         }

@@ -17,9 +17,8 @@ namespace PCHUB
         {
             InitializeComponent();
             ConfigureInitialUI();
-            this.FileExplorer.Click += PCHUB.FileExplorer_Click;
         }
-        private Library PCHUB = new Library();
+        Library PcHub = new Library();
 
         private void ConfigureInitialUI()
         {
@@ -184,6 +183,11 @@ namespace PCHUB
             {
                 MessageBox.Show($"Ошибка: {ex.Message}");
             }
+        }
+
+        private void FileExplorer_Click(object sender, EventArgs e)
+        {
+            PcHub.writer();
         }
     }
 }
