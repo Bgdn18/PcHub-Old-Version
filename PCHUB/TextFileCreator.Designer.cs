@@ -128,7 +128,6 @@
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             quitToolStripMenuItem.Size = new Size(47, 20);
             quitToolStripMenuItem.Text = "Quit";
-            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // label1
             // 
@@ -210,7 +209,6 @@
             MinimizeBox = false;
             Name = "TextFileCreator";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TextFileCreator";
             menuStrip1.ResumeLayout(false);

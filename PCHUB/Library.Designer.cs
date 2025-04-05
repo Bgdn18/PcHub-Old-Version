@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
+            btnZAPRET = new Button();
             btnCMD = new Button();
             btnCONTROLPANEL = new Button();
             btnREGEDIT = new Button();
@@ -52,11 +53,24 @@
             btnHostsFile = new Button();
             btnPowerShellPolicyManager = new Button();
             label1 = new Label();
+            btnIObitUnlocker = new Button();
             label2 = new Label();
             btnTools = new Button();
             btnMain = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
+            // 
+            // btnZAPRET
+            // 
+            btnZAPRET.Cursor = Cursors.Hand;
+            btnZAPRET.Font = new Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnZAPRET.Location = new Point(143, 172);
+            btnZAPRET.Name = "btnZAPRET";
+            btnZAPRET.Size = new Size(124, 35);
+            btnZAPRET.TabIndex = 0;
+            btnZAPRET.Text = "ZAPRET 🐱‍👤";
+            btnZAPRET.UseVisualStyleBackColor = true;
+            btnZAPRET.Click += ZAPRET_Click;
             // 
             // btnCMD
             // 
@@ -316,6 +330,19 @@
             label1.TabIndex = 41;
             label1.Text = "Library:";
             // 
+            // btnIObitUnlocker
+            // 
+            btnIObitUnlocker.Cursor = Cursors.Hand;
+            btnIObitUnlocker.Font = new Font("Consolas", 8.25F);
+            btnIObitUnlocker.Location = new Point(12, 172);
+            btnIObitUnlocker.Margin = new Padding(4, 3, 4, 3);
+            btnIObitUnlocker.Name = "btnIObitUnlocker";
+            btnIObitUnlocker.Size = new Size(125, 35);
+            btnIObitUnlocker.TabIndex = 42;
+            btnIObitUnlocker.Text = "IObit Unlocker 🗝";
+            btnIObitUnlocker.UseVisualStyleBackColor = true;
+            btnIObitUnlocker.Click += btnIObitUnlocker_Click;
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -361,6 +388,7 @@
             Controls.Add(btnMain);
             Controls.Add(btnTools);
             Controls.Add(label2);
+            Controls.Add(btnIObitUnlocker);
             Controls.Add(label1);
             Controls.Add(btnPowerShellPolicyManager);
             Controls.Add(btnHostsFile);
@@ -378,6 +406,7 @@
             Controls.Add(btnREGEDIT);
             Controls.Add(btnCONTROLPANEL);
             Controls.Add(btnCMD);
+            Controls.Add(btnZAPRET);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
@@ -385,7 +414,6 @@
             MinimizeBox = false;
             Name = "Library";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Library";
             menuStrip1.ResumeLayout(false);
@@ -395,6 +423,8 @@
         }
 
         #endregion
+
+        private Button btnZAPRET;
         private Button btnCMD;
         private Button btnCONTROLPANEL;
         private Button btnREGEDIT;
@@ -415,6 +445,7 @@
         private Button btnHostsFile;
         private Button btnPowerShellPolicyManager;
         private Label label1;
+        private Button btnIObitUnlocker;
         private ToolStripMenuItem aDDTOSTARTUPToolStripMenuItem;
         private ToolStripMenuItem addToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;

@@ -110,8 +110,6 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "TaskMgrControl";
-            ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TaskMgrControl";
             menuStrip1.ResumeLayout(false);

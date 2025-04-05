@@ -33,7 +33,6 @@
             Restart = new Button();
             menuStrip1 = new MenuStrip();
             quitToolStripMenuItem = new ToolStripMenuItem();
-            BSOD = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,7 +42,7 @@
             Shutdown.Font = new Font("Consolas", 12F);
             Shutdown.Location = new Point(12, 27);
             Shutdown.Name = "Shutdown";
-            Shutdown.Size = new Size(135, 50);
+            Shutdown.Size = new Size(193, 58);
             Shutdown.TabIndex = 0;
             Shutdown.Text = "Shutdown";
             Shutdown.UseVisualStyleBackColor = true;
@@ -53,9 +52,9 @@
             // 
             Restart.Cursor = Cursors.Hand;
             Restart.Font = new Font("Consolas", 12F);
-            Restart.Location = new Point(153, 27);
+            Restart.Location = new Point(216, 27);
             Restart.Name = "Restart";
-            Restart.Size = new Size(135, 50);
+            Restart.Size = new Size(193, 58);
             Restart.TabIndex = 1;
             Restart.Text = "Restart";
             Restart.UseVisualStyleBackColor = true;
@@ -67,7 +66,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { quitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(441, 24);
+            menuStrip1.Size = new Size(419, 24);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -79,24 +78,11 @@
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
-            // BSOD
-            // 
-            BSOD.Cursor = Cursors.Hand;
-            BSOD.Font = new Font("Consolas", 12F);
-            BSOD.Location = new Point(294, 27);
-            BSOD.Name = "BSOD";
-            BSOD.Size = new Size(135, 50);
-            BSOD.TabIndex = 3;
-            BSOD.Text = "BSOD";
-            BSOD.UseVisualStyleBackColor = true;
-            BSOD.Click += BSOD_Click;
-            // 
             // PowerManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(441, 89);
-            Controls.Add(BSOD);
+            ClientSize = new Size(419, 94);
             Controls.Add(Restart);
             Controls.Add(Shutdown);
             Controls.Add(menuStrip1);
@@ -106,7 +92,6 @@
             MinimizeBox = false;
             Name = "PowerManagement";
             ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PowerManagement";
             menuStrip1.ResumeLayout(false);
@@ -121,6 +106,5 @@
         private Button Restart;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem quitToolStripMenuItem;
-        private Button BSOD;
     }
 }

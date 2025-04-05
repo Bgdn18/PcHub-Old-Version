@@ -13,9 +13,9 @@ using PCHUB.Main;
 
 namespace PCHUB
 {
-    public partial class otherTools : Form
+    public partial class AdminApps : Form
     {
-        public otherTools()
+        public AdminApps()
         {
             InitializeComponent();
 
@@ -26,6 +26,16 @@ namespace PCHUB
         }
         _list list = new _list();
 
+
+        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
+
+        private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.RebeccaPurple;
+        }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -87,35 +97,17 @@ namespace PCHUB
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            list.quit();
+            this.Close();
         }
 
-        private void BuildLabel_Click(object sender, EventArgs e) // информация о билде
+        private void TaskMgrUnlocker_Click(object sender, EventArgs e)
+        {
+            list.taskmgrunlocker();
+        }
+
+        private void BuildLabel_Click(object sender, EventArgs e)
         {
             list.build();
-        }
-
-        private void btnZapret_Click(object sender, EventArgs e) // Запрет для YouTube и Discord
-        {
-            string hubDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string Zapretpath = Path.Combine(hubDirectory, "ZAPRET");
-            string ZAPRET = Path.Combine(Zapretpath, "ZAPRET.bat");
-
-            try
-            {
-                Process.Start(ZAPRET);
-            }
-            catch (Exception ex)
-            {
-                {
-                    MessageBox.Show("Error opening Zapret: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void btnTaskMgr_Click(object sender, EventArgs e)
-        {
-            list.taskmgr();
         }
     }
 }
