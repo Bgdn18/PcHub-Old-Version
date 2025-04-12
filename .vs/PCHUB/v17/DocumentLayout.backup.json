@@ -40,7 +40,7 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -71,17 +71,6 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 1,
-              "Title": "Library.cs",
-              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
-              "RelativeDocumentMoniker": "PCHUB\\Library.cs",
-              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
-              "RelativeToolTip": "PCHUB\\Library.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAcwKYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T21:02:42.935Z",
-=======
               "DocumentIndex": 2,
               "Title": "PCHUBForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.Designer.cs",
@@ -91,22 +80,10 @@
               "ViewState": "AgIAAAkBAAAAAAAAAAAqwBMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T13:44:26.342Z",
->>>>>>> NewFeatureBranch
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 0,
-              "Title": "Library.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
-              "RelativeDocumentMoniker": "PCHUB\\Library.cs",
-              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs [Design]",
-              "RelativeToolTip": "PCHUB\\Library.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T21:02:18.988Z",
-              "EditorCaption": " [Design]"
-=======
               "DocumentIndex": 1,
               "Title": "PCHUBForm.cs",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
@@ -117,7 +94,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T13:44:14.749Z",
               "EditorCaption": ""
->>>>>>> NewFeatureBranch
             },
             {
               "$type": "Bookmark",
@@ -126,11 +102,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-<<<<<<< HEAD
-=======
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "Library.cs",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
+              "RelativeDocumentMoniker": "PCHUB\\Library.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
+              "RelativeToolTip": "PCHUB\\Library.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAcwKYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:02:42.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Library.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
+              "RelativeDocumentMoniker": "PCHUB\\Library.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs [Design]",
+              "RelativeToolTip": "PCHUB\\Library.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:02:18.988Z",
+=======
               "DocumentIndex": 0,
               "Title": "PCHUBForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
@@ -139,8 +136,8 @@
               "RelativeToolTip": "PCHUB\\_Main Forms\\PCHUBForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T13:37:34.728Z",
-              "EditorCaption": " [Design]"
 >>>>>>> NewFeatureBranch
+              "EditorCaption": " [Design]"
             }
           ]
         }
