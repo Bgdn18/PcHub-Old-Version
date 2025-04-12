@@ -33,6 +33,11 @@
             Restart = new Button();
             menuStrip1 = new MenuStrip();
             quitToolStripMenuItem = new ToolStripMenuItem();
+<<<<<<< HEAD:PCHUB/PowerManagement.Designer.cs
+=======
+            BSOD = new Button();
+            LockOrUnlockPowerMgr = new Button();
+>>>>>>> NewFeatureBranch:PCHUB/_PowerManagerForms/PowerManagement.Designer.cs
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,11 +83,43 @@
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
+<<<<<<< HEAD:PCHUB/PowerManagement.Designer.cs
+=======
+            // BSOD
+            // 
+            BSOD.Cursor = Cursors.Hand;
+            BSOD.Font = new Font("Consolas", 12F);
+            BSOD.Location = new Point(294, 27);
+            BSOD.Name = "BSOD";
+            BSOD.Size = new Size(135, 50);
+            BSOD.TabIndex = 3;
+            BSOD.Text = "B.S.O.D.";
+            BSOD.UseVisualStyleBackColor = true;
+            BSOD.Click += BSOD_Click;
+            // 
+            // LockOrUnlockPowerMgr
+            // 
+            LockOrUnlockPowerMgr.Cursor = Cursors.Hand;
+            LockOrUnlockPowerMgr.Location = new Point(12, 83);
+            LockOrUnlockPowerMgr.Name = "LockOrUnlockPowerMgr";
+            LockOrUnlockPowerMgr.Size = new Size(417, 23);
+            LockOrUnlockPowerMgr.TabIndex = 4;
+            LockOrUnlockPowerMgr.Text = "Unlock/Lock PowerManager";
+            LockOrUnlockPowerMgr.UseVisualStyleBackColor = true;
+            LockOrUnlockPowerMgr.Click += LockOrUnlockPowerMgr_Click;
+            // 
+>>>>>>> NewFeatureBranch:PCHUB/_PowerManagerForms/PowerManagement.Designer.cs
             // PowerManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD:PCHUB/PowerManagement.Designer.cs
             ClientSize = new Size(419, 94);
+=======
+            ClientSize = new Size(441, 116);
+            Controls.Add(LockOrUnlockPowerMgr);
+            Controls.Add(BSOD);
+>>>>>>> NewFeatureBranch:PCHUB/_PowerManagerForms/PowerManagement.Designer.cs
             Controls.Add(Restart);
             Controls.Add(Shutdown);
             Controls.Add(menuStrip1);
@@ -106,5 +143,10 @@
         private Button Restart;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem quitToolStripMenuItem;
+<<<<<<< HEAD:PCHUB/PowerManagement.Designer.cs
+=======
+        private Button BSOD;
+        private Button LockOrUnlockPowerMgr;
+>>>>>>> NewFeatureBranch:PCHUB/_PowerManagerForms/PowerManagement.Designer.cs
     }
 }

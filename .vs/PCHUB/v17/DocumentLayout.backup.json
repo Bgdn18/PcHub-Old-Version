@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\krati\\source\\repos\\PCHUB\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,6 +14,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\main forms\\_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\main forms\\_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\_main forms\\pchubform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\_main forms\\pchubform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\_main forms\\pchubform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\_main forms\\pchubform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\_main forms\\pchubform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\_main forms\\pchubform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|c:\\users\\krati\\source\\repos\\pchub\\pchub\\_main forms\\_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69D5C72E-4414-44FA-9524-1C06B5A25D2A}|PCHUB\\PCHUB.csproj|solutionrelative:pchub\\_main forms\\_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> NewFeatureBranch
     }
   ],
   "DocumentGroupContainers": [
@@ -22,6 +39,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -33,6 +51,19 @@
               "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Main Forms\\_list.cs",
               "RelativeToolTip": "PCHUB\\Main Forms\\_list.cs",
               "ViewState": "AgIAAOEAAAAAAAAAAAAAAOAAAAANAAAAAAAAAA==",
+=======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_list.cs",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\_list.cs",
+              "RelativeDocumentMoniker": "PCHUB\\_Main Forms\\_list.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\_list.cs",
+              "RelativeToolTip": "PCHUB\\_Main Forms\\_list.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAUwKIAAAAgAAAAAAAAAA==",
+>>>>>>> NewFeatureBranch
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T15:43:17.6Z",
               "IsPinned": true,
@@ -40,6 +71,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "Library.cs",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
@@ -49,10 +81,22 @@
               "ViewState": "AgIAAJgAAAAAAAAAAAAcwKYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T21:02:42.935Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "PCHUBForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.Designer.cs",
+              "RelativeDocumentMoniker": "PCHUB\\_Main Forms\\PCHUBForm.Designer.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.Designer.cs",
+              "RelativeToolTip": "PCHUB\\_Main Forms\\PCHUBForm.Designer.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAqwBMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:44:26.342Z",
+>>>>>>> NewFeatureBranch
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Library.cs [Design]",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
@@ -62,6 +106,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T21:02:18.988Z",
               "EditorCaption": " [Design]"
+=======
+              "DocumentIndex": 1,
+              "Title": "PCHUBForm.cs",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "RelativeDocumentMoniker": "PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "RelativeToolTip": "PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAASwG0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:44:14.749Z",
+              "EditorCaption": ""
+>>>>>>> NewFeatureBranch
             },
             {
               "$type": "Bookmark",
@@ -70,6 +126,21 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PCHUBForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "RelativeDocumentMoniker": "PCHUB\\_Main Forms\\PCHUBForm.cs",
+              "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs [Design]",
+              "RelativeToolTip": "PCHUB\\_Main Forms\\PCHUBForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:37:34.728Z",
+              "EditorCaption": " [Design]"
+>>>>>>> NewFeatureBranch
             }
           ]
         }

@@ -34,10 +34,8 @@
             txtSearch = new TextBox();
             Settings = new Button();
             menuStrip1 = new MenuStrip();
-            themeToolStripMenuItem = new ToolStripMenuItem();
-            whiteToolStripMenuItem = new ToolStripMenuItem();
-            purpleToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
+            quitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,7 +54,7 @@
             // btnSearch
             // 
             btnSearch.Cursor = Cursors.Hand;
-            btnSearch.Font = new Font("Consolas", 11.25F, FontStyle.Bold);
+            btnSearch.Font = new Font("Consolas", 11.25F);
             btnSearch.Location = new Point(12, 179);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(628, 65);
@@ -69,7 +67,7 @@
             // 
             txtSearch.AccessibleDescription = "";
             txtSearch.Cursor = Cursors.IBeam;
-            txtSearch.Font = new Font("Consolas", 11.25F, FontStyle.Bold);
+            txtSearch.Font = new Font("Consolas", 11.25F);
             txtSearch.Location = new Point(12, 41);
             txtSearch.Multiline = true;
             txtSearch.Name = "txtSearch";
@@ -93,40 +91,28 @@
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.FromArgb(224, 224, 224);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { themeToolStripMenuItem, aboutToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { aboutToolStripMenuItem, quitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(653, 24);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
-            // themeToolStripMenuItem
-            // 
-            themeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { whiteToolStripMenuItem, purpleToolStripMenuItem });
-            themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            themeToolStripMenuItem.Size = new Size(55, 20);
-            themeToolStripMenuItem.Text = "Theme";
-            // 
-            // whiteToolStripMenuItem
-            // 
-            whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-            whiteToolStripMenuItem.Size = new Size(108, 22);
-            whiteToolStripMenuItem.Text = "White";
-            whiteToolStripMenuItem.Click += whiteToolStripMenuItem_Click_1;
-            // 
-            // purpleToolStripMenuItem
-            // 
-            purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            purpleToolStripMenuItem.Size = new Size(108, 22);
-            purpleToolStripMenuItem.Text = "Purple";
-            purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click_1;
-            // 
             // aboutToolStripMenuItem
             // 
+            aboutToolStripMenuItem.Font = new Font("Consolas", 9F);
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(52, 20);
+            aboutToolStripMenuItem.Size = new Size(54, 20);
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            // 
+            // quitToolStripMenuItem
+            // 
+            quitToolStripMenuItem.Font = new Font("Consolas", 9F);
+            quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            quitToolStripMenuItem.Size = new Size(47, 20);
+            quitToolStripMenuItem.Text = "Quit";
+            quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 
             // YouTube
             // 
@@ -139,10 +125,16 @@
             Controls.Add(defoultbrowserlabelyoutube);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "YouTube";
+<<<<<<< HEAD
+=======
+            ShowIcon = false;
+            ShowInTaskbar = false;
+>>>>>>> NewFeatureBranch
             StartPosition = FormStartPosition.CenterScreen;
             Text = "YouTube";
             menuStrip1.ResumeLayout(false);
@@ -158,9 +150,7 @@
         private TextBox txtSearch;
         private Button Settings;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem themeToolStripMenuItem;
-        private ToolStripMenuItem whiteToolStripMenuItem;
-        private ToolStripMenuItem purpleToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
+        private ToolStripMenuItem quitToolStripMenuItem;
     }
 }

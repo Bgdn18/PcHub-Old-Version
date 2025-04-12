@@ -26,7 +26,7 @@ namespace PCHUB
 
         private void Settings_Click(object sender, EventArgs e)
         {
-            list.settings();
+            _list.ProcessOpen.ProcessRun("explorer.exe", "ms-settings:");
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -35,12 +35,9 @@ namespace PCHUB
 
             if (!string.IsNullOrWhiteSpace(query))
             {
-
-                string url = "https://" +  Uri.EscapeDataString(query);
-
                 try
                 {
-                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                    Process.Start(new ProcessStartInfo(query) { UseShellExecute = true });
                 }
                 catch (Exception ex)
                 {
@@ -51,17 +48,12 @@ namespace PCHUB
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            list.build(); // информация о приложении
+            _list.OpenApps.Build(); // информация о приложении
         }
 
-        private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.White; // белая тема
-        }
-
-        private void purpleToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            this.BackColor = Color.BlueViolet; // фиолетовая тема
+            this.Close();
         }
     }
 }
