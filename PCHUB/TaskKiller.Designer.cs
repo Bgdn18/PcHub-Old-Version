@@ -53,6 +53,7 @@
             SuspendLayout();
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // btnKillProcess
             // 
             btnKillProcess.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -77,6 +78,8 @@
             // 
 =======
 >>>>>>> NewFeatureBranch
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.FromArgb(224, 224, 224);
@@ -84,10 +87,14 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
 <<<<<<< HEAD
+<<<<<<< HEAD
             menuStrip1.Size = new Size(800, 24);
 =======
             menuStrip1.Size = new Size(569, 24);
 >>>>>>> NewFeatureBranch
+=======
+            menuStrip1.Size = new Size(569, 24);
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -272,6 +279,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
 <<<<<<< HEAD
+<<<<<<< HEAD
             ClientSize = new Size(800, 245);
             Controls.Add(txtProcessName);
             Controls.Add(btnKillProcess);
@@ -279,6 +287,10 @@
             ClientSize = new Size(569, 490);
             Controls.Add(tabControl1);
 >>>>>>> NewFeatureBranch
+=======
+            ClientSize = new Size(569, 490);
+            Controls.Add(tabControl1);
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;

@@ -132,6 +132,9 @@ namespace PCHUB
         {
             _list.OpenApps.Build();
         }
+<<<<<<< HEAD
 >>>>>>> NewFeatureBranch
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
     }
 }

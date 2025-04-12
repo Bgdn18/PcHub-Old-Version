@@ -274,6 +274,7 @@
             // 
             // HybsLabel
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD:PCHUB/Library.Designer.cs
             label1.AutoSize = true;
             label1.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -306,6 +307,8 @@
             label2.TabIndex = 43;
             label2.Text = "Hubs:";
 =======
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             HybsLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             HybsLabel.AutoSize = true;
             HybsLabel.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -410,10 +413,13 @@
             MaximizeBox = false;
             MaximumSize = new Size(1200, 900);
             MinimizeBox = false;
+<<<<<<< HEAD
 <<<<<<< HEAD:PCHUB/Library.Designer.cs
             Name = "Library";
             ShowIcon = false;
 =======
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             MinimumSize = new Size(500, 500);
             Name = "PCHUBForm";
 >>>>>>> NewFeatureBranch:PCHUB/_Main Forms/PCHUBForm.Designer.cs

@@ -1,6 +1,10 @@
 ﻿namespace PCHUB
 {
+<<<<<<< HEAD
     partial class AdminApps
+=======
+    partial class otherTools
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +32,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminApps));
             TxtWriter = new Button();
@@ -93,6 +98,14 @@
             REGEDIT.UseVisualStyleBackColor = true;
             REGEDIT.Click += REGEDIT_Click;
 ========
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(otherTools));
+            btnCONTROLPANEL = new Button();
+            btnCMD = new Button();
+            menuStrip1 = new MenuStrip();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            quitToolStripMenuItem = new ToolStripMenuItem();
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             btnExplorerPP = new Button();
             btnProccesHacker = new Button();
             btnIoBitUnlocker = new Button();
@@ -113,6 +126,7 @@
             btnCONTROLPANEL.Text = "Control Panel";
             btnCONTROLPANEL.UseVisualStyleBackColor = true;
             btnCONTROLPANEL.Click += CONTROLPANEL_Click;
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
             // 
             // btnCMD
@@ -152,6 +166,11 @@
             CMD.UseVisualStyleBackColor = true;
             CMD.Click += CMD_Click;
 ========
+=======
+            // 
+            // btnCMD
+            // 
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             btnCMD.Cursor = Cursors.Hand;
             btnCMD.Font = new Font("Consolas", 9F);
             btnCMD.Location = new Point(12, 44);
@@ -161,19 +180,27 @@
             btnCMD.Text = "CMD";
             btnCMD.UseVisualStyleBackColor = true;
             btnCMD.Click += CMD_Click;
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.FromArgb(224, 224, 224);
             menuStrip1.Font = new Font("Consolas", 9F);
+<<<<<<< HEAD
             menuStrip1.Items.AddRange(new ToolStripItem[] { themesToolStripMenuItem, aboutToolStripMenuItem, quitToolStripMenuItem });
+=======
+            menuStrip1.Items.AddRange(new ToolStripItem[] { aboutToolStripMenuItem, quitToolStripMenuItem });
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(423, 24);
             menuStrip1.TabIndex = 20;
             menuStrip1.Text = "menuStrip1";
             // 
+<<<<<<< HEAD
             // themesToolStripMenuItem
             // 
             themesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { whiteToolStripMenuItem, purpleToolStripMenuItem });
@@ -196,6 +223,8 @@
             purpleToolStripMenuItem.Text = "Purple";
             purpleToolStripMenuItem.Click += purpleToolStripMenuItem_Click;
             // 
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.Font = new Font("Consolas", 9F);
@@ -214,6 +243,7 @@
             // 
             // btnExplorerPP
             // 
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             ExplorerPP.Cursor = Cursors.Hand;
             ExplorerPP.Font = new Font("Consolas", 9F);
@@ -225,6 +255,8 @@
             ExplorerPP.UseVisualStyleBackColor = true;
             ExplorerPP.Click += ExplorerPP_Click;
 ========
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             btnExplorerPP.Cursor = Cursors.Hand;
             btnExplorerPP.Font = new Font("Consolas", 9F);
             btnExplorerPP.Location = new Point(148, 44);
@@ -234,6 +266,7 @@
             btnExplorerPP.Text = "Explorer++";
             btnExplorerPP.UseVisualStyleBackColor = true;
             btnExplorerPP.Click += ExplorerPP_Click;
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
             // 
             // btnProccesHacker
@@ -249,6 +282,11 @@
             ProccesHacker.UseVisualStyleBackColor = true;
             ProccesHacker.Click += button1_Click;
 ========
+=======
+            // 
+            // btnProccesHacker
+            // 
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             btnProccesHacker.Cursor = Cursors.Hand;
             btnProccesHacker.Font = new Font("Consolas", 9F);
             btnProccesHacker.Location = new Point(12, 100);
@@ -258,6 +296,7 @@
             btnProccesHacker.Text = "Procces Hacker";
             btnProccesHacker.UseVisualStyleBackColor = true;
             btnProccesHacker.Click += processhacker_Click;
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
             // 
             // btnIoBitUnlocker
@@ -273,6 +312,11 @@
             IoBitUnlocker.UseVisualStyleBackColor = true;
             IoBitUnlocker.Click += IObitUnlocker_Click;
 ========
+=======
+            // 
+            // btnIoBitUnlocker
+            // 
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             btnIoBitUnlocker.Cursor = Cursors.Hand;
             btnIoBitUnlocker.Font = new Font("Consolas", 9F);
             btnIoBitUnlocker.Location = new Point(148, 100);
@@ -282,6 +326,7 @@
             btnIoBitUnlocker.Text = "IObit Unlocker";
             btnIoBitUnlocker.UseVisualStyleBackColor = true;
             btnIoBitUnlocker.Click += IObitUnlocker_Click;
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
             // 
             // AddLocalUser
@@ -306,6 +351,8 @@
             TaskMgrControl.Text = "Task Manager Control";
             TaskMgrControl.UseVisualStyleBackColor = true;
             TaskMgrControl.Click += TaskMgrUnlocker_Click;
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // 
             // BuildLabel
             // 
@@ -315,11 +362,15 @@
             BuildLabel.Cursor = Cursors.Hand;
             BuildLabel.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             BuildLabel.ForeColor = Color.White;
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             BuildLabel.Location = new Point(13, 340);
 ========
             BuildLabel.Location = new Point(0, 226);
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
+=======
+            BuildLabel.Location = new Point(0, 226);
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             BuildLabel.Margin = new Padding(4, 0, 4, 0);
             BuildLabel.Name = "BuildLabel";
             BuildLabel.Size = new Size(35, 20);
@@ -327,9 +378,12 @@
             BuildLabel.Text = "null";
             BuildLabel.Click += BuildLabel_Click;
             // 
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             // AdminApps
 ========
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // btnZapret
             // 
             btnZapret.Cursor = Cursors.Hand;
@@ -355,11 +409,15 @@
             btnRegedit.Click += btnRegedit_Click;
             // 
             // otherTools
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             ClientSize = new Size(689, 369);
             Controls.Add(BuildLabel);
@@ -375,6 +433,8 @@
             Controls.Add(EXPLORER);
             Controls.Add(CMD);
 ========
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             ClientSize = new Size(423, 256);
             Controls.Add(btnRegedit);
             Controls.Add(btnZapret);
@@ -384,13 +444,17 @@
             Controls.Add(btnExplorerPP);
             Controls.Add(btnCONTROLPANEL);
             Controls.Add(btnCMD);
+<<<<<<< HEAD
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             MaximumSize = new Size(439, 450);
             MinimizeBox = false;
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
             Name = "AdminApps";
 ========
@@ -400,6 +464,14 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tools";
+=======
+            MinimumSize = new Size(439, 295);
+            Name = "otherTools";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "3rd party Apps";
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -407,6 +479,7 @@
         }
 
         #endregion
+<<<<<<< HEAD
 <<<<<<<< HEAD:PCHUB/AdminApps.Designer.cs
 
         private Button TxtWriter;
@@ -442,5 +515,18 @@
         private Button btnZapret;
         private Button btnRegedit;
 >>>>>>>> NewFeatureBranch:PCHUB/_Main Forms/OtherTool.Designer.cs
+=======
+        private Button btnCONTROLPANEL;
+        private Button btnCMD;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem aboutToolStripMenuItem;
+        private Button btnExplorerPP;
+        private Button btnProccesHacker;
+        private Button btnIoBitUnlocker;
+        private ToolStripMenuItem quitToolStripMenuItem;
+        private Label BuildLabel;
+        private Button btnZapret;
+        private Button btnRegedit;
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
     }
 }

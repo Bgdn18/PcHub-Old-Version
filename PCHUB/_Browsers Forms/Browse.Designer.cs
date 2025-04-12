@@ -132,7 +132,10 @@
             MinimizeBox = false;
             Name = "Browse";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             ShowIcon = false;
             ShowInTaskbar = false;
 >>>>>>> NewFeatureBranch

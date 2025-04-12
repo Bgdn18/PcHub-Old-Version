@@ -40,6 +40,7 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
+<<<<<<< HEAD
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -56,6 +57,12 @@
           "Children": [
             {
               "$type": "Document",
+=======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
               "DocumentIndex": 3,
               "Title": "_list.cs",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\_list.cs",
@@ -63,6 +70,7 @@
               "ToolTip": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\_list.cs",
               "RelativeToolTip": "PCHUB\\_Main Forms\\_list.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAAAUwKIAAAAgAAAAAAAAAA==",
+<<<<<<< HEAD
 >>>>>>> NewFeatureBranch
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T15:43:17.6Z",
@@ -75,6 +83,12 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+=======
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T15:43:17.6Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             },
             {
               "$type": "Document",
@@ -103,6 +117,7 @@
               "EditorCaption": ""
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
 <<<<<<< HEAD
               "DocumentIndex": 1,
@@ -115,10 +130,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T21:02:42.935Z",
               "EditorCaption": ""
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Library.cs [Design]",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\Library.cs",
               "RelativeDocumentMoniker": "PCHUB\\Library.cs",
@@ -128,6 +152,8 @@
               "WhenOpened": "2025-04-04T21:02:18.988Z",
 =======
               "DocumentIndex": 0,
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
               "Title": "PCHUBForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\krati\\source\\repos\\PCHUB\\PCHUB\\_Main Forms\\PCHUBForm.cs",
               "RelativeDocumentMoniker": "PCHUB\\_Main Forms\\PCHUBForm.cs",
@@ -135,7 +161,10 @@
               "RelativeToolTip": "PCHUB\\_Main Forms\\PCHUBForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T13:37:34.728Z",
+<<<<<<< HEAD
 >>>>>>> NewFeatureBranch
+=======
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
               "EditorCaption": " [Design]"
             }
           ]

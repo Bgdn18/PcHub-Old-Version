@@ -27,6 +27,10 @@ namespace PCHUB
 
         private void whiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:PCHUB/AdminApps.cs
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             this.BackColor = Color.White;
         }
 
@@ -37,6 +41,11 @@ namespace PCHUB
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+========
+>>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller):PCHUB/_Main Forms/OtherTool.cs
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
             _list.OpenApps.Build();
         }
 
@@ -75,7 +84,15 @@ namespace PCHUB
 
         private void TaskMgrUnlocker_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             list.taskmgrunlocker();
+=======
+<<<<<<<< HEAD:PCHUB/AdminApps.cs
+            list.taskmgrunlocker();
+========
+            _list.OpenApps.Build();
+>>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller):PCHUB/_Main Forms/OtherTool.cs
+>>>>>>> eecdd45 (улучшена логика в _list добавлен совершенно новый taskkiller)
         }
 
         private void BuildLabel_Click(object sender, EventArgs e)
